@@ -1,0 +1,949 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "0.0.1",
+        "title": "Manutenção de Pessoas Jurídicas",
+        "description": "Gerencia todas as atividades relacionadas com a manutenção das pessoas jurídicas no ERP Desktop."
+    },
+    "servers": [
+        {
+            "url": "https://api.nasajon.app/dados-mestre"
+        }
+    ],
+    "components": {
+        "securitySchemes": {
+            "OAuth2": {
+                "type": "oauth2",
+                "flows": {
+                    "password": {
+                        "tokenUrl": "https://auth.nasajon.com.br/auth/realms/master/protocol/openid-connect/token",
+                        "scopes": {
+                            "offline_access": "Token para acesso offline"
+                        }
+                    }
+                }
+            }
+        },
+        "schemas": {
+            "pessoa_juridica": {
+                "type": "object",
+                "required": [
+                    "codigo",
+                    "qualificacao",
+                    "razao_social",
+                    "inativo",
+                    "grupo_empresarial",
+                    "tenant"
+                ],
+                "properties": {
+                    "pk": {
+                        "type": "string",
+                        "format": "uuid",
+                        "description": "Id da pessoa no ERP",
+                        "readOnly": true
+                    },
+                    "id": {
+                        "type": "string",
+                        "description": "CNPJ da pessoa jurídica."
+                    },
+                    "codigo": {
+                        "type": "string",
+                        "description": "Identificador único, do ponto de vista do usuário final."
+                    },
+                    "qualificacao": {
+                        "type": "string",
+                        "description": "Tipo de participante perante a lei (pessoa física, jurídica, etc).",
+                        "default": "juridica",
+                        "enum": [
+                            "juridica",
+                            "publica_federal",
+                            "publica_estadual",
+                            "publica_municipal",
+                            "cooperativa_credito",
+                            "cooperativa_agro",
+                            "cooperativa",
+                            "financeira",
+                            "seguradora_capitalizacao",
+                            "corretora_autonoma_seguro",
+                            "previdencia_complementar_aberta",
+                            "previdencia_complementar_fechada",
+                            "economia_mista",
+                            "outras_publica_federal",
+                            "outros",
+                            "agregada",
+                            "fazenda_agraria"
+                        ]
+                    },
+                    "razao_social": {
+                        "type": "string",
+                        "description": "Razão social do Participante."
+                    },
+                    "nome_fantasia": {
+                        "type": "string",
+                        "description": "Nome fantasia do participante (ou qualquer tipo de nomenclatura alternativa)."
+                    },
+                    "site": {
+                        "type": "string",
+                        "description": "Endereço eletrônico do participante."
+                    },
+                    "inativo": {
+                        "type": "boolean",
+                        "description": "Indica que um participante está inativo (não excluído, apenas oculo por opção do usuário).",
+                        "default": false
+                    },
+                    "cno": {
+                        "type": "string",
+                        "description": "Cadastro Nacional de Obras."
+                    },
+                    "rntrc": {
+                        "type": "string",
+                        "description": "Registro Nacional de Transportadores Rodoviários de Cargas."
+                    },
+                    "cnae_principal": {
+                        "type": "string",
+                        "description": "Classificação Nacional de Atividade Econômica principal."
+                    },
+                    "fpas": {
+                        "type": "string",
+                        "description": "Código de Fundo de Previdência e Assistência Social."
+                    },
+                    "inicio_atividades": {
+                        "type": "string",
+                        "format": "date",
+                        "description": "Data de início das atividades (se pessoa jurídica ou similar)."
+                    },
+                    "final_atividades": {
+                        "type": "string",
+                        "format": "date",
+                        "description": "Data de final das atividades (se pessoa jurídica ou similar)."
+                    },
+                    "logotipo_url": {
+                        "type": "string",
+                        "description": "URL para imagem de logotipo do participante (normalmente pessoa jurídica)."
+                    },
+                    "ramo_atividade": {
+                        "type": "string",
+                        "description": "Descrição do ramo de atividade principal do participante."
+                    },
+                    "cafir": {
+                        "type": "string",
+                        "description": "Cadastro de Imóveis Rurais."
+                    },
+                    "inscricao_estadual": {
+                        "type": "string",
+                        "description": "Inscrição Estadual."
+                    },
+                    "inscricao_estadual_substituto": {
+                        "type": "string",
+                        "description": "Inscrição Estadual Substituto."
+                    },
+                    "inscricao_municipal": {
+                        "type": "string",
+                        "description": "Inscrição Municipal."
+                    },
+                    "indicador_inscricao_estadual": {
+                        "type": "string",
+                        "description": "Indicador da Inscrição Estadual.",
+                        "enum": [
+                            "contribuinte_icms",
+                            "contribuinte_icms_isento_ie",
+                            "nao_contribuinte_icms"
+                        ]
+                    },
+                    "tipo_simples": {
+                        "type": "string",
+                        "description": "Se opta pelo tipo simples.",
+                        "enum": [
+                            "indefinido",
+                            "optante",
+                            "nao_optante"
+                        ]
+                    },
+                    "cliente": {
+                        "type": "boolean",
+                        "description": "Se a pessoa é um cliente ou não",
+                        "default": false
+                    },
+                    "situacao_financeiro": {
+                        "type": "string",
+                        "description": "Situação do financeiro da pessoa",
+                        "enum": [
+                            "nenhum",
+                            "adimplente",
+                            "inadimplente"
+                        ]
+                    },
+                    "criado_em": {
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "Indica data e hora de cadastro do registro.",
+                        "readOnly": true
+                    },
+                    "atualizado_em": {
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "Indica data e hora da última atualização do registro.",
+                        "readOnly": true
+                    },
+                    "grupo_empresarial": {
+                        "type": "string",
+                        "description": "Código do grupo empresarial ao qual o registro pertence."
+                    },
+                    "grupo_empresarial_id": {
+                        "type": "string",
+                        "format": "uuid",
+                        "description": "Identificador do grupo empresarial ao qual o registro pertence."
+                    },
+                    "tenant": {
+                        "type": "integer",
+                        "description": "Identificador do tenant ao qual o registro pertence."
+                    },
+                    "contatos": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/contato"
+                        }
+                    },
+                    "enderecos": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/endereco"
+                        }
+                    }
+                }
+            },
+            "contato": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "format": "uuid",
+                        "description": "Id do contato",
+                        "readOnly": true
+                    },
+                    "nome": {
+                        "type": "string",
+                        "description": "Nome do contato"
+                    },
+                    "nascimento": {
+                        "type": "string",
+                        "format": "date",
+                        "description": "Nascimento do contato"
+                    },
+                    "cargo": {
+                        "type": "string",
+                        "description": "Cargo do contato"
+                    },
+                    "sexo": {
+                        "type": "string",
+                        "description": "Sexo do contato",
+                        "enum": [
+                            "masculino",
+                            "feminino"
+                        ]
+                    },
+                    "observacao": {
+                        "type": "string",
+                        "description": "Observação do contato"
+                    },
+                    "primeiro_nome": {
+                        "type": "string",
+                        "description": "Primeiro nome do contato"
+                    },
+                    "sobre_nome": {
+                        "type": "string",
+                        "description": "Sobrenome do contato"
+                    },
+                    "cpf": {
+                        "type": "string",
+                        "description": "CPF do contato"
+                    },
+                    "responsavel_legal": {
+                        "type": "boolean",
+                        "description": "Se o contato é o responsável legal",
+                        "default": false
+                    },
+                    "principal": {
+                        "type": "boolean",
+                        "description": "Se é o contato principal"
+                    },
+                    "titulo": {
+                        "type": "string",
+                        "description": "Título do contato"
+                    },
+                    "decisor": {
+                        "type": "boolean",
+                        "description": "Se é o contato decisor"
+                    },
+                    "influenciador": {
+                        "type": "boolean",
+                        "description": "Se é o contato influenciador"
+                    },
+                    "atualizado_em": {
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "Indica data e hora da última atualização do registro."
+                    },
+                    "emails": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/email"
+                        }
+                    },
+                    "telefones": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/telefone"
+                        }
+                    }
+                }
+            },
+            "email": {
+                "type": "object",
+                "required": [
+                    "email"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "format": "uuid",
+                        "description": "Id do email",
+                        "readOnly": true
+                    },
+                    "email": {
+                        "type": "string",
+                        "description": "Email"
+                    },
+                    "principal": {
+                        "type": "boolean",
+                        "description": "Se é o email principal",
+                        "default": false
+                    },
+                    "atualizado_em": {
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "Indica data e hora da última atualização do registro."
+                    }
+                }
+            },
+            "telefone": {
+                "type": "object",
+                "required": [
+                    "ddd",
+                    "telefone",
+                    "tipo"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "format": "uuid",
+                        "description": "Id do telefone",
+                        "readOnly": true
+                    },
+                    "ddd": {
+                        "type": "string",
+                        "description": "DDD do telefone"
+                    },
+                    "telefone": {
+                        "type": "string",
+                        "description": "Telefone"
+                    },
+                    "descricao": {
+                        "type": "string",
+                        "description": "Descrição do telefone"
+                    },
+                    "ramal": {
+                        "type": "string",
+                        "description": "Ramal do telefone"
+                    },
+                    "ddi": {
+                        "type": "string",
+                        "description": "DDI do telefone"
+                    },
+                    "tipo": {
+                        "type": "string",
+                        "description": "Tipo do telefone",
+                        "enum": [
+                            "residencial",
+                            "comercial",
+                            "celular",
+                            "fax",
+                            "pager",
+                            "virtual",
+                            "recado",
+                            "telefax"
+                        ]
+                    },
+                    "principal": {
+                        "type": "boolean",
+                        "description": "Se é o telefone principal",
+                        "default": false
+                    },
+                    "atualizado_em": {
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "Indica data e hora da última atualização do registro."
+                    }
+                }
+            },
+            "endereco": {
+                "type": "object",
+                "required": [
+                    "tipo_logradouro",
+                    "logradouro",
+                    "numero",
+                    "cep",
+                    "bairro",
+                    "uf",
+                    "ibge",
+                    "cidade"
+                ],
+                "properties": {
+                    "endereco": {
+                        "type": "string",
+                        "format": "uuid",
+                        "description": "Id do endereço",
+                        "readOnly": true
+                    },
+                    "tipo_logradouro": {
+                        "type": "string",
+                        "description": "Tipo do Logradouro",
+                        "enum": [
+                            "aer",
+                            "al",
+                            "a",
+                            "av",
+                            "cpo",
+                            "ch",
+                            "col",
+                            "con",
+                            "cj",
+                            "dt",
+                            "esp",
+                            "etc",
+                            "est",
+                            "fav",
+                            "faz",
+                            "fra",
+                            "jd",
+                            "ld",
+                            "lg",
+                            "lgo",
+                            "lgr",
+                            "lot",
+                            "mro",
+                            "nuc",
+                            "prq",
+                            "psa",
+                            "pat",
+                            "pc",
+                            "q",
+                            "rec",
+                            "res",
+                            "rod",
+                            "r",
+                            "st",
+                            "sit",
+                            "tv",
+                            "trv",
+                            "vle",
+                            "ver",
+                            "v",
+                            "vd",
+                            "vla",
+                            "vl",
+                            "pr",
+                            "bal",
+                            "bl",
+                            "gal",
+                            "gja",
+                            "ac",
+                            "aca",
+                            "acl",
+                            "ad",
+                            "ae",
+                            "amd",
+                            "ame",
+                            "an",
+                            "ant",
+                            "art",
+                            "at",
+                            "atl",
+                            "avc",
+                            "avm",
+                            "avv",
+                            "bc",
+                            "bco",
+                            "bel",
+                            "blo",
+                            "bls",
+                            "blv",
+                            "bsq",
+                            "bvd",
+                            "bx",
+                            "c",
+                            "cal",
+                            "cam",
+                            "can",
+                            "cha",
+                            "cic",
+                            "cir",
+                            "cjm",
+                            "cmp",
+                            "com",
+                            "cor",
+                            "crg",
+                            "ctn",
+                            "dsc",
+                            "dsv",
+                            "eb",
+                            "eim",
+                            "ens",
+                            "ent",
+                            "eq",
+                            "esc",
+                            "esd",
+                            "ese",
+                            "esi",
+                            "esl",
+                            "esm",
+                            "ess",
+                            "esv",
+                            "eta",
+                            "etd",
+                            "etn",
+                            "etp",
+                            "ett",
+                            "eva",
+                            "evd",
+                            "ex",
+                            "fer",
+                            "fnt",
+                            "fte",
+                            "hab",
+                            "ia",
+                            "ioa",
+                            "jde",
+                            "lt",
+                            "mer",
+                            "mna",
+                            "mod",
+                            "mrg",
+                            "mte",
+                            "nur",
+                            "out",
+                            "par",
+                            "pas",
+                            "pce",
+                            "pda",
+                            "pdo",
+                            "pnt",
+                            "prl",
+                            "prm",
+                            "prr",
+                            "psg",
+                            "psp",
+                            "pss",
+                            "pte",
+                            "pto",
+                            "qta",
+                            "qts",
+                            "ram",
+                            "rcr",
+                            "rer",
+                            "ret",
+                            "rla",
+                            "rmp",
+                            "roa",
+                            "rot",
+                            "rpe",
+                            "rpr",
+                            "rtn",
+                            "rtt",
+                            "seg",
+                            "srv",
+                            "sub",
+                            "tch",
+                            "ter",
+                            "tun",
+                            "tvp",
+                            "tvv",
+                            "uni",
+                            "vac",
+                            "val",
+                            "vco",
+                            "vev",
+                            "vlt",
+                            "vpe",
+                            "vrt",
+                            "zig",
+                            "o",
+                            "ind",
+                            "tr"
+                        ]
+                    },
+                    "logradouro": {
+                        "type": "string",
+                        "description": "Logradouro do endereço"
+                    },
+                    "numero": {
+                        "type": "string",
+                        "description": "Número do endereço"
+                    },
+                    "complemento": {
+                        "type": "string",
+                        "description": "Complemento do endereço"
+                    },
+                    "cep": {
+                        "type": "string",
+                        "description": "CEP do endereço"
+                    },
+                    "bairro": {
+                        "type": "string",
+                        "description": "Bairro do endereço"
+                    },
+                    "tipo": {
+                        "type": "string",
+                        "description": "Bairro do endereço",
+                        "enum": [
+                            "local",
+                            "entrega",
+                            "cobranca"
+                        ]
+                    },
+                    "uf_exterior": {
+                        "type": "string",
+                        "description": "UF se o endereço for do exterior"
+                    },
+                    "padrao": {
+                        "type": "boolean",
+                        "description": "Se o endereço é o padrão",
+                        "default": false
+                    },
+                    "uf": {
+                        "type": "string",
+                        "description": "UF do endereço"
+                    },
+                    "pais": {
+                        "type": "string",
+                        "description": "Código do país do endereço",
+                        "default": "1058"
+                    },
+                    "ibge": {
+                        "type": "string",
+                        "description": "IBGE do endereço"
+                    },
+                    "cidade": {
+                        "type": "string",
+                        "description": "Cidade do endereço"
+                    },
+                    "atualizado_em": {
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "Indica data e hora da última atualização do registro."
+                    }
+                }
+            },
+            "pessoas_juridicas": {
+                "type": "object",
+                "properties": {
+                    "next": {
+                        "type": "string"
+                    },
+                    "prev": {
+                        "type": "string"
+                    },
+                    "result": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/pessoa_juridica"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "security": [
+        {
+            "OAuth2": [
+                "offline_access"
+            ]
+        }
+    ],
+    "paths": {
+        "/erp3/2531/pessoas-juridicas": {
+            "get": {
+                "tags": [
+                    "List Pessoas Jurídicas"
+                ],
+                "description": "API para listagem paginada de pessoas juríridicas.",
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "description": "Token gerado pelo OAuth 2",
+                        "in": "header",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "grupo_empresarial",
+                        "description": "Código do grupo empresarial para filtro dos registros.",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "tenant",
+                        "description": "Identificador do tenant para filtro dos registros",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "atualizado_apos",
+                        "description": "Permite filtrar os registros atualizados após um determinada data e hora.",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "format": "date-time"
+                        }
+                    },
+                    {
+                        "name": "atualizado_antes",
+                        "description": "Permite filtrar os registros atualizados antes de uma determinada data e hora.",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "format": "date-time"
+                        }
+                    },
+                    {
+                        "name": "fields",
+                        "description": "Permite indicar uma lista de campos a recuperar na chamada (exemplo: `fields=site,enderecos`).",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/pessoas_juridicas"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Requisição inválida. Causa provável: faltando parâmetros obrigatórios (tenant e grupo_empresarial)."
+                    },
+                    "401": {
+                        "description": "Proibido acesso. Causa provável: falha na autenticação."
+                    },
+                    "403": {
+                        "description": "Proibida ação. Causa provável: falha na autorização."
+                    },
+                    "500": {
+                        "description": "Erro interno do servidor. Ver detalhes no corpo da resposta."
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Post Pessoa Jurídica"
+                ],
+                "description": "API para gravação de uma nova pessoa jurídica.",
+                "requestBody": {
+                    "description": "Corpo da requisição",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/pessoa_juridica"
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "description": "Token gerado pelo OAuth 2",
+                        "in": "header",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Criado com sucesso."
+                    },
+                    "400": {
+                        "description": "Requisição inválida. Causas prováveis: \na) faltando propriedades obrigatórias; \nb) erro de formatação do json de entrada; \nc) formato incorreto em alguma das propriedades."
+                    },
+                    "401": {
+                        "description": "Proibido acesso. Causa provável: falha na autenticação."
+                    },
+                    "403": {
+                        "description": "Proibida ação. Causa provável: falha na autorização."
+                    },
+                    "500": {
+                        "description": "Erro interno do servidor. Ver detalhes no corpo da resposta."
+                    }
+                }
+            }
+        },
+        "/erp3/2531/pessoas-juridicas/{id}": {
+            "get": {
+                "tags": [
+                    "GET Pessoa Jurídica"
+                ],
+                "description": "API para recuperação de uma pessoa jurídica, por meio de seu documento de identificação.",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "description": "CNPJ da pessoa jurídica.",
+                        "required": true,
+                        "in": "path",
+                        "schema": {
+                            "type": "string",
+                            "example": "/erp3/2531/pessoas-juridicas/71688968000109"
+                        }
+                    },
+                    {
+                        "name": "Authorization",
+                        "description": "Token gerado pelo OAuth 2",
+                        "in": "header",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "grupo_empresarial",
+                        "description": "Código do grupo empresarial para filtro dos registros.",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "tenant",
+                        "description": "Identificador do tenant para filtro dos registros",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "fields",
+                        "description": "Permite indicar uma lista de campos a recuperar na chamada (exemplo: `fields=site,enderecos`).",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/pessoa_juridica"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Requisição inválida. Causa provável: faltando parâmetros obrigatórios (tenant e grupo_empresarial)."
+                    },
+                    "401": {
+                        "description": "Proibido acesso. Causa provável: falha na autenticação."
+                    },
+                    "403": {
+                        "description": "Proibida ação. Causa provável: falha na autorização."
+                    },
+                    "404": {
+                        "description": "Não encontrado. Causa provável: identificador não existente no grupo_empresarial/tenant."
+                    },
+                    "500": {
+                        "description": "Erro interno do servidor. Ver detalhes no corpo da resposta."
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "PUT Pessoa Jurídica"
+                ],
+                "description": "API para atualização de uma pessoa jurídica, por meio de seu documento de identificação.",
+                "requestBody": {
+                    "description": "Corpo da requisição",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/pessoa_juridica"
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "description": "Token gerado pelo OAuth 2",
+                        "in": "header",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "id",
+                        "description": "CNPJ da pessoa jurídica.",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "example": "/erp3/2531/pessoas-juridicas/58773641000169"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Sem conteúdo. Atualizado com sucesso com sucesso."
+                    },
+                    "400": {
+                        "description": "Requisição inválida. Causas prováveis: a) faltando propriedades obrigatórias; b) erro de formatação do json de entrada; c) formato incorreto em alguma das propriedades;"
+                    },
+                    "401": {
+                        "description": "Proibido acesso. Causa provável: falha na autenticação."
+                    },
+                    "403": {
+                        "description": "Proibida ação. Causa provável: falha na autorização."
+                    },
+                    "404": {
+                        "description": "Não encontrado. Causa provável: identificador não existente no grupo_empresarial/tenant."
+                    },
+                    "500": {
+                        "description": "Erro interno do servidor. Ver detalhes no corpo da resposta."
+                    }
+                }
+            }
+        }
+    }
+}

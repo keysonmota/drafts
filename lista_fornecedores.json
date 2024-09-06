@@ -1,0 +1,3963 @@
+[
+    {
+        "pk": "ff655f7c-d2f8-4cbb-806c-b04e32046ff6",
+        "id": "27150648000109",
+        "codigo": "73189",
+        "qualificacao": "juridica",
+        "nome": "15 OFICIO DE NOTAS DA COMARCA DA CAPITAL DO ESTADO DO RIO DE JANEIRO",
+        "criado_em": "2013-05-14",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "af5b7368-a3f0-4ff3-91ea-e10a32c8b556",
+                "nome": "ADRIANA OLIVEIRA",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "89642928-8e0c-4b22-a66b-b64654706c35",
+                "nome": "CARTORIO FERNANDA DE FREITAS LEITAO",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "dc383592-bdfa-4d36-94a2-c1cfa3c5af8a",
+                "nome": "MARCELO MACIEL",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "8a031792-e631-44ee-b51a-1081e3168a78",
+                "nome": "RENALDO BUSSIERE",
+                "nascimento": "1899-12-30",
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "afd9b6a6-1ac1-41c3-9198-7832619eabbb",
+                "nome": "RENATO",
+                "nascimento": "1899-12-30",
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "cb507ee9-8878-4b71-8b44-e5a90e73064f",
+                "nome": "TATIANA MOREIRA",
+                "nascimento": "1899-12-30",
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "536c2b3b-8a8a-492e-8e10-950b4ce357ba",
+                "tipo_logradouro": "r",
+                "logradouro": "do OUVIDOR",
+                "numero": "89",
+                "complemento": "2º ANDAR",
+                "cep": "20040030",
+                "bairro": "CENTRO",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:48:04"
+            },
+            {
+                "endereco": "7d71072d-a54c-4009-8a1b-4da4b5c67468",
+                "tipo_logradouro": "r",
+                "logradouro": "do OUVIDOR",
+                "numero": "89",
+                "complemento": "2º ANDAR",
+                "cep": "20040030",
+                "bairro": "CENTRO",
+                "tipo": "cobranca",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:48:04"
+            },
+            {
+                "endereco": "00347057-fca8-49bb-90e6-ccdf82321e49",
+                "tipo_logradouro": "r",
+                "logradouro": "DO OUVIDOR",
+                "numero": "89",
+                "complemento": "3 ANDAR",
+                "cep": "20040030",
+                "bairro": "CENTRO",
+                "tipo": "entrega",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": null,
+                "atualizado_em": "2016-07-08T22:48:04"
+            },
+            {
+                "endereco": "5eab761a-8f97-4762-93e0-d0c490469985",
+                "tipo_logradouro": "r",
+                "logradouro": "DO OUVIDOR",
+                "numero": "89",
+                "complemento": "3 ANDAR",
+                "cep": "20040030",
+                "bairro": "CENTRO",
+                "tipo": "entrega",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": null,
+                "atualizado_em": "2016-07-08T22:48:04"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "9153eb39-c8bb-47dc-a633-4d4802730837",
+        "id": "73237307000184",
+        "codigo": "73237307000184",
+        "qualificacao": "juridica",
+        "nome": "DELI TIME COMESTIVEIS FINOS LTDA EPP",
+        "criado_em": "2016-06-02",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "17cdc368-21f9-47d8-a551-0c0492c9cb09",
+                "nome": "DELI TIME COMESTIVEIS FINOS LTDA EPP",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "af538a26-93e2-42ad-b37c-226b551419e2",
+                "tipo_logradouro": null,
+                "logradouro": "RUA HILARIO RIBEIRO, 8  A 22 PARTE",
+                "numero": null,
+                "complemento": null,
+                "cep": "20270180",
+                "bairro": "PRACA DA BANDEIRA",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "RIO DE JANEIRO",
+                "atualizado_em": "2016-05-31T16:33:54"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "5fc9052b-0498-4d25-9199-4bfec20af5de",
+        "id": "05577545000189",
+        "codigo": "73703",
+        "qualificacao": "juridica",
+        "nome": "SPINPLUS COMPRESSORES E EQUIPAMENTOS LTDA",
+        "criado_em": "2013-06-24",
+        "atualizado_em": "2024-03-08T17:22:11",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "5c72880e-b9b4-4ffe-995c-08ed32ee7123",
+                "nome": "Adriana",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": "Caramuru",
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "66eb2398-024c-4eda-996c-888f7df75849",
+                "nome": "Contato Padrão",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": "Padrão",
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "23f0cbf9-2175-47b3-a826-6551925b1f97",
+                "nome": "Márcia Florence",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": "Sampaio",
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "13845ced-ed50-4d6a-90cb-c70c45fb7671",
+                "nome": "Mauro De Melo",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": "Sampaio",
+                "cpf": null,
+                "atualizado_em": "2023-10-24T14:52:55"
+            },
+            {
+                "id": "d33bffb9-0fc5-4464-8573-d28b73a6a54f",
+                "nome": "Pedro",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": "Carvalho",
+                "cpf": null,
+                "atualizado_em": "2023-10-24T14:52:55"
+            },
+            {
+                "id": "6be4c1c1-4b55-4fe9-b2f8-fcbee8a853d8",
+                "nome": "SPINPLUS",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "17dec1b5-4827-4849-8f31-85960011b582",
+                "tipo_logradouro": "est",
+                "logradouro": "DO OUTEIRO SANTO",
+                "numero": "00631",
+                "complemento": "",
+                "cep": "22713169",
+                "bairro": "TAQUARA",
+                "tipo": "cobranca",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "RIO DE JANEIRO",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "8a012cad-3a39-4c61-9ff2-734cba87957c",
+                "tipo_logradouro": "est",
+                "logradouro": "DO OUTEIRO SANTO",
+                "numero": "00631",
+                "complemento": "",
+                "cep": "22713169",
+                "bairro": "TAQUARA",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "RIO DE JANEIRO",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "fa8af448-e868-49ce-ac8b-16999c013239",
+                "tipo_logradouro": "est",
+                "logradouro": "DO OUTEIRO SANTO",
+                "numero": "00631",
+                "complemento": "",
+                "cep": "22713169",
+                "bairro": "TAQUARA",
+                "tipo": "entrega",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "RIO DE JANEIRO",
+                "atualizado_em": "2022-08-24T11:56:11"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "a2d563b4-c5cf-4c68-b853-0c1b518c597b",
+        "id": "17203870000160",
+        "codigo": "73735",
+        "qualificacao": "juridica",
+        "nome": "R MENDES DE MIRANDA LTDA",
+        "criado_em": "2013-06-26",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "00193bec-0b23-4042-ab1e-02def555e0d9",
+                "nome": "R MENDES DE MIRANDA LTDA",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "07b12e78-1446-48ca-b7b6-e5b8cfd48079",
+                "nome": "Rodolfo Mendes de Miranda",
+                "nascimento": "1899-12-30",
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "02754ec6-81d0-4736-9741-791e1773f5ea",
+                "tipo_logradouro": "",
+                "logradouro": "Av. Manchester, 95",
+                "numero": "",
+                "complemento": "",
+                "cep": "27267150",
+                "bairro": "",
+                "tipo": "entrega",
+                "uf": "rj",
+                "ibge": "3306305",
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "89359bf3-8d34-4f36-b455-8d2a4448d98e",
+                "tipo_logradouro": null,
+                "logradouro": "Av. Manchester, 95",
+                "numero": null,
+                "complemento": null,
+                "cep": "27267150",
+                "bairro": "",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3306305",
+                "cidade": "Volta Redonda",
+                "atualizado_em": "2015-05-18T19:02:18"
+            },
+            {
+                "endereco": "bd560920-3297-442d-80e6-0737f5c54d5b",
+                "tipo_logradouro": "av",
+                "logradouro": "MANCHESTER",
+                "numero": "95",
+                "complemento": "",
+                "cep": "27267150",
+                "bairro": "DUZENTOS E QUARENTA E NOVE",
+                "tipo": "cobranca",
+                "uf": "rj",
+                "ibge": "3306305",
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:53:26"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "db9dcbff-d3d2-4ae5-a335-559a96687858",
+        "id": "15395776000125",
+        "codigo": "74007",
+        "qualificacao": "juridica",
+        "nome": "ANDRAY GUSTAVO BARBOSA DOS SANTOS",
+        "criado_em": "2013-07-18",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "e157e386-609b-40ad-907e-e6d662503112",
+                "nome": "Andray Gustavo Barbosa Dos Santos",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "05d00360-e34c-446a-a8bf-c64eb0ac50d0",
+                "nome": "ANDRAY GUSTAVO BARBOSA DOS SANTOS",
+                "nascimento": "1899-12-30",
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "d5452a8c-3adb-4fcf-8b3a-601c9b0fb835",
+                "nome": "Contato Padrão",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": "Contato",
+                "sobre_nome": "Padrão",
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "1bcfcfd9-4aa1-4d85-bd98-736b4a7aaa1e",
+                "tipo_logradouro": "r",
+                "logradouro": "Mogi Mirim",
+                "numero": "129",
+                "complemento": null,
+                "cep": "69043200",
+                "bairro": "Alvorada",
+                "tipo": "entrega",
+                "uf": "am",
+                "ibge": "1302603",
+                "cidade": "Manaus",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "219fc445-0d13-4c8c-b45a-5bd8e7650f5c",
+                "tipo_logradouro": "r",
+                "logradouro": "Mogi Mirim",
+                "numero": "129",
+                "complemento": null,
+                "cep": "69043200",
+                "bairro": "Alvorada",
+                "tipo": "local",
+                "uf": "am",
+                "ibge": "1302603",
+                "cidade": "Manaus",
+                "atualizado_em": "2015-05-18T19:02:18"
+            },
+            {
+                "endereco": "7af2000f-aa58-4fa9-9b9e-802ed78a96c0",
+                "tipo_logradouro": "r",
+                "logradouro": "Mogi Mirim",
+                "numero": "129",
+                "complemento": null,
+                "cep": "69043200",
+                "bairro": "Alvorada",
+                "tipo": "cobranca",
+                "uf": "am",
+                "ibge": "1302603",
+                "cidade": "Manaus",
+                "atualizado_em": "2016-07-08T22:53:26"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "d885ef2a-0aa4-4766-94e2-0521f5c16615",
+        "id": "01723892000111",
+        "codigo": "74171",
+        "qualificacao": "juridica",
+        "nome": "PROVEDOR WEB BRASIL S/S LTDA- ME",
+        "criado_em": "2013-08-06",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "de793621-8458-44e5-860a-1e32cdf6cf7c",
+                "nome": "MARTA MOREIRA",
+                "nascimento": "1899-12-30",
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "6f70fc87-898b-4c10-aff7-737d5bf3d89e",
+                "nome": "WB INTERNET",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "be445135-e86c-445c-ab70-c9174870a103",
+                "tipo_logradouro": null,
+                "logradouro": "Av. Nilo Peçanha 50",
+                "numero": null,
+                "complemento": null,
+                "cep": "20020906",
+                "bairro": "Centro",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "Rio de Janeiro",
+                "atualizado_em": "2015-05-18T19:02:18"
+            },
+            {
+                "endereco": "4af6c05c-24dd-446f-925c-cc527269bd29",
+                "tipo_logradouro": "av",
+                "logradouro": "NILO PEÇANHA",
+                "numero": "50",
+                "complemento": "GR 2213/2214 PARTE",
+                "cep": "20020100",
+                "bairro": "CENTRO",
+                "tipo": "cobranca",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:53:26"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "3856502b-984c-4e17-9a7c-f1960c83a7ab",
+        "id": "72060999000175",
+        "codigo": "7440",
+        "qualificacao": "juridica",
+        "nome": "FUNDACAO COORDENACAO DE PROJETOSPESQUISAS E ESTUDOS TECNOLOGICOS COPPETEC",
+        "criado_em": "2008-02-21",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "97e0451c-b8a1-4595-bcc8-3e315ce97f6f",
+                "nome": "Alex",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "bf195882-7b32-4dfa-844c-2b8719e343ad",
+                "nome": "Amaury Alves Tavares Júnior",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "07c6e5c0-ba78-45c5-a537-1a9d57f8dada",
+                "nome": "Americo Ferreira Lima",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "b45d77b3-2990-4acd-84e8-e921ca412d18",
+                "nome": "Anderson",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "2e2105a5-aaa5-446c-9873-edd4ace35e63",
+                "nome": "André Patriota",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "c11dc013-fb9f-4c7d-80aa-dcf11f07f2df",
+                "nome": "Contato Padrão",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": "Padrão",
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "17b388a6-46c9-4cd2-afda-92d6fdea9ceb",
+                "nome": "Diogo de Almeida",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "2f6d7140-cee1-44a6-bc8c-34211310990a",
+                "nome": "Fabio Ivila Joao",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "e7bf0a4f-4ef4-46fb-bb1b-753799db43bd",
+                "nome": "FERNANDO PEREGRINO",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "020a3e3b-6922-4958-83bf-68bc87819654",
+                "nome": "Fundacao Coppetec",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "3ce37eb7-a50d-4fbe-ab08-dad2dc33cc37",
+                "nome": "FUNDACAO COPPETEC",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "09622518-55fb-4685-87d7-e539b0dc75af",
+                "nome": "Iremar",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "546a5ff2-bf24-4923-9eda-03a673719d08",
+                "nome": "Monique Sebastião da Silva",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "a0f26a8c-9ee0-4c12-8d3b-caec05ac5555",
+                "nome": "TINA",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "eb4101d7-99f3-4236-ac33-d164c4ab94b0",
+                "nome": "Wilson Da Silva Narcizo",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "fea6eef7-6a41-4262-9255-44260dde97aa",
+                "nome": "ZILZA",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "1d51bc13-3846-43fd-b80b-e14e0b41bf23",
+                "tipo_logradouro": "av",
+                "logradouro": "AV MONIZ ARAGAO",
+                "numero": "360",
+                "complemento": "BLOCO I  CGTEC",
+                "cep": "21941-594",
+                "bairro": "CIDADE UNIVERSITARIA",
+                "tipo": "cobranca",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "Rio de Janeiro",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "4f2911b0-f4ac-4e89-961c-d41648796aed",
+                "tipo_logradouro": "av",
+                "logradouro": "AV MONIZ ARAGAO",
+                "numero": "360",
+                "complemento": "BLOCO I  CGTEC",
+                "cep": "21941-594",
+                "bairro": "CIDADE UNIVERSITARIA",
+                "tipo": "entrega",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "Rio de Janeiro",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "52d30286-82a9-4725-8ef3-68c16dfb3d1a",
+                "tipo_logradouro": "av",
+                "logradouro": "AV MONIZ ARAGAO",
+                "numero": "360",
+                "complemento": "BLOCO I  CGTEC",
+                "cep": "21941-594",
+                "bairro": "CIDADE UNIVERSITARIA",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "Rio de Janeiro",
+                "atualizado_em": "2016-07-08T22:53:26"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "ebef5ee1-2431-41e5-abea-0cf6fbc9ddf8",
+        "id": "07721028000167",
+        "codigo": "74669",
+        "qualificacao": "juridica",
+        "nome": "ALCANTARA NASCIMENTO INFORMATICA",
+        "criado_em": "2013-09-17",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "5cd5d909-34f4-4927-93a4-6eb1f939ccdb",
+                "nome": "Contato Padrão",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": "Contato",
+                "sobre_nome": "Padrão",
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "24635add-b999-421b-a6d3-02bbcc6515e7",
+                "nome": "H.A. DE ALMEIDA - ME - HEDAT",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "51ca1f26-b15d-4a3a-948c-96a948a839d0",
+                "tipo_logradouro": null,
+                "logradouro": "Rua Visconde do Rosário, Sala 210, 03",
+                "numero": null,
+                "complemento": null,
+                "cep": "40015050",
+                "bairro": "Comércio",
+                "tipo": "local",
+                "uf": "ba",
+                "ibge": "2927408",
+                "cidade": "Salvador",
+                "atualizado_em": "2015-06-18T15:33:55"
+            },
+            {
+                "endereco": "d2673971-e442-4110-ab6c-ec4b1225fcbe",
+                "tipo_logradouro": "r",
+                "logradouro": "TRANCREDO NEVES",
+                "numero": "3343",
+                "complemento": "EDIFÍCIO CEMPRE; 7º ANDAR/ SL 704 B",
+                "cep": "41820021",
+                "bairro": "CAMINHO DAS ÁRVORES",
+                "tipo": "entrega",
+                "uf": "ba",
+                "ibge": "2927408",
+                "cidade": null,
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "2808762c-f403-4796-a792-8cdd4c1ab35c",
+                "tipo_logradouro": "r",
+                "logradouro": "VISCONDE DO ROSARIO",
+                "numero": "03",
+                "complemento": "EDIF SENADOR DANTAS SALA 210",
+                "cep": "40015050",
+                "bairro": "COMERCIO",
+                "tipo": "cobranca",
+                "uf": "ba",
+                "ibge": "2927408",
+                "cidade": null,
+                "atualizado_em": "2016-07-08T22:53:26"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "2db0f0f9-0155-4ca5-946a-b2abd84e96f6",
+        "id": "18831702000182",
+        "codigo": "74693",
+        "qualificacao": "juridica",
+        "nome": "DANIELE XAVIER ALVES 11263522769",
+        "criado_em": "2013-09-19",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": true,
+        "contatos": [
+            {
+                "id": "862afb3a-e449-4276-9242-19299322851f",
+                "nome": "A S TECH SOLUÇÕES EM TECNOLOGIA (MEI)",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "89485734-beb8-451a-982a-aee485bd1ff5",
+                "nome": "Contato Padrão",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": "Contato",
+                "sobre_nome": "Padrão",
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "22388f07-be5c-48be-81f3-07594b74e63a",
+                "nome": "DANIELE XAVIER ALVES",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "e30011c6-2dc1-490b-b9c9-19d3ccee70cf",
+                "nome": "JESSICA",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "d5e2aa7e-40b6-4b3f-a4bb-386ac98cfc5f",
+                "nome": "RAYSSA PATRICIO BONACIO",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "2ac6d568-f898-44d5-b0f2-f15478de12c4",
+                "tipo_logradouro": "r",
+                "logradouro": "PROFESSOR HENRIQUE COSTA",
+                "numero": "730",
+                "complemento": "APTO 207 - BL. 01",
+                "cep": "22770233",
+                "bairro": "PECHINCHA",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "Rio de Janeiro",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "db5b31eb-1ce8-4d02-8973-dd331552a006",
+                "tipo_logradouro": "r",
+                "logradouro": "PROFESSOR HENRIQUE COSTA",
+                "numero": "730",
+                "complemento": "APTO 207 - BL. 01",
+                "cep": "22770233",
+                "bairro": "PECHINCHA",
+                "tipo": "cobranca",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "Rio de Janeiro",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "e7d4074d-6e51-46fa-8e13-4f8f6e024b28",
+                "tipo_logradouro": "r",
+                "logradouro": "PROFESSOR HENRIQUE COSTA",
+                "numero": "730",
+                "complemento": "APTO 207 - BL. 01",
+                "cep": "22770233",
+                "bairro": "PECHINCHA",
+                "tipo": "entrega",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "Rio de Janeiro",
+                "atualizado_em": "2016-07-08T22:53:26"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "debd0e9a-deaa-47a4-93b1-b4ba6cbd62e8",
+        "id": "61462853749",
+        "codigo": "75076",
+        "qualificacao": "fisica",
+        "nome": "HELENA DA SILVA OLIVEIRA",
+        "criado_em": "2013-10-22",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "4e09b029-21ba-4d59-a0cd-9b16cb189233",
+                "nome": "Contato Padrão",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": "Padrão",
+                "cpf": null,
+                "atualizado_em": "2022-12-14T21:31:38"
+            },
+            {
+                "id": "a4672b42-4919-464b-85f2-953c3c858cdd",
+                "nome": "HELENA DA SILVA OLIVEIRA",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-12-14T21:31:38"
+            },
+            {
+                "id": "d53e98ce-b1d9-405a-8932-716d58de78e1",
+                "nome": "HELENA DA SILVA OLIVEIRA",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-12-14T21:31:38"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "593bf488-edb6-4fc2-9437-da1727d04106",
+                "tipo_logradouro": "tv",
+                "logradouro": "LORIA , APTO 401 BL 03 , APTO 401 BL 03",
+                "numero": "20",
+                "complemento": null,
+                "cep": "24120080",
+                "bairro": "FONSECA",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3303302",
+                "cidade": "Niterói",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "b86a6859-98d9-472f-bda5-f5d5e73c6877",
+                "tipo_logradouro": "tv",
+                "logradouro": "LORIA , APTO 401 BL 03 , APTO 401 BL 03",
+                "numero": "20",
+                "complemento": null,
+                "cep": "24120080",
+                "bairro": "FONSECA",
+                "tipo": "entrega",
+                "uf": "rj",
+                "ibge": "3303302",
+                "cidade": "Niterói",
+                "atualizado_em": "2022-08-24T11:56:11"
+            },
+            {
+                "endereco": "c6ccbf24-712d-4887-bfb0-257b4def4cb8",
+                "tipo_logradouro": "tv",
+                "logradouro": "LORIA , APTO 401 BL 03 , APTO 401 BL 03",
+                "numero": "20",
+                "complemento": null,
+                "cep": "24120080",
+                "bairro": "FONSECA",
+                "tipo": "cobranca",
+                "uf": "rj",
+                "ibge": "3303302",
+                "cidade": "Niterói",
+                "atualizado_em": "2016-07-08T22:53:26"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "e8209694-93d4-4eb1-994d-692eb1cc9abe",
+        "id": "16693796000145",
+        "codigo": "75284",
+        "qualificacao": "juridica",
+        "nome": "H1 INTERNET SERVICOS DE INFORMATICA LTDA - ME",
+        "criado_em": "2013-11-13",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "1d15014b-4c82-4127-9640-2b3b0b55c863",
+                "nome": "Contato Padrão",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": "Contato",
+                "sobre_nome": "Padrão",
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "749fe63c-7a74-4f7e-b37a-42f93df8010d",
+                "nome": "H1 INTERNET",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "2d51eb5b-bb9f-44e7-a55d-02b8cd704c30",
+                "nome": "RAFAEL SANTOS MAIA",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "39f3c00f-6de9-4662-ba01-45acde53d1d3",
+                "tipo_logradouro": "rod",
+                "logradouro": "AMARAL PEIXOTO",
+                "numero": "90202",
+                "complemento": "LOJA 02",
+                "cep": "28970000",
+                "bairro": "COQUEIRAL",
+                "tipo": "cobranca",
+                "uf": "rj",
+                "ibge": "3300209",
+                "cidade": null,
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "9fab8c6e-7da9-4898-8b99-1ef54ae57d5d",
+                "tipo_logradouro": null,
+                "logradouro": "AMARAL PEIXOTO,90202 - LJ 02",
+                "numero": null,
+                "complemento": null,
+                "cep": "28970000",
+                "bairro": "COQUEIRAL",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3300209",
+                "cidade": "Araruama",
+                "atualizado_em": "2015-05-18T19:02:18"
+            },
+            {
+                "endereco": "999f4bae-0f67-4ce9-a6b8-ca4eaf404c1d",
+                "tipo_logradouro": null,
+                "logradouro": null,
+                "numero": null,
+                "complemento": null,
+                "cep": "00000000",
+                "bairro": null,
+                "tipo": "entrega",
+                "uf": null,
+                "ibge": null,
+                "cidade": null,
+                "atualizado_em": "2016-07-08T22:53:26"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "ada44f6d-ec27-4beb-abfd-35dc1a428624",
+        "id": "33709171000143",
+        "codigo": "75410",
+        "qualificacao": "juridica",
+        "nome": "ASSOCIACAO REDE CRUZADA",
+        "criado_em": "2013-11-29",
+        "atualizado_em": "2023-11-29T13:59:58",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "41d54be2-3f84-4eb4-b55c-59184ff549d1",
+                "nome": "Camilla",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": "Trindade",
+                "cpf": null,
+                "atualizado_em": "2023-08-16T14:50:31"
+            },
+            {
+                "id": "d084ffc4-90af-4fa0-a13b-d3e81770b792",
+                "nome": "Contato Padrão",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": "Padrão",
+                "cpf": null,
+                "atualizado_em": "2023-06-12T17:30:41"
+            },
+            {
+                "id": "6092a149-41e6-4a61-8ff2-e046a1ccfe22",
+                "nome": "Cruzada Do Menor",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2023-08-16T14:50:31"
+            },
+            {
+                "id": "200fa48f-7f88-4bda-a29c-7f583ae302c0",
+                "nome": "Cruzada Do Menor Do Menor",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2023-09-20T19:04:48"
+            },
+            {
+                "id": "eeb0c8e5-cb8d-412b-aa49-40c189221ee4",
+                "nome": "Jacqueline Cardoso",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2023-09-20T19:03:10"
+            },
+            {
+                "id": "368a7c02-45f7-4801-ad33-534b44895ee9",
+                "nome": "Leonardo",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2023-06-12T17:30:41"
+            },
+            {
+                "id": "c7a8cabb-6e6e-41ef-97bd-11a683c67fbc",
+                "nome": "Paulo",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": "Teixeira",
+                "cpf": null,
+                "atualizado_em": "2023-06-12T17:30:41"
+            },
+            {
+                "id": "3a1b9b11-3102-4944-9489-e5d6e08e00df",
+                "nome": "Vanessa",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": "Valpassos",
+                "cpf": null,
+                "atualizado_em": "2024-01-09T21:25:07"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "098d3a95-9b45-4674-b600-dca3c0480ef1",
+                "tipo_logradouro": "av",
+                "logradouro": "PASTOR MARTIN LUTHER KING JR.",
+                "numero": "00126",
+                "complemento": "BLC 2 CRECHE",
+                "cep": "20765000",
+                "bairro": "DEL CASTILHO",
+                "tipo": "entrega",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "RIO DE JANEIRO",
+                "atualizado_em": "2022-08-24T11:56:11"
+            },
+            {
+                "endereco": "7e7c8776-5825-4250-bab7-1fa08fe0ed43",
+                "tipo_logradouro": "av",
+                "logradouro": "PASTOR MARTIN LUTHER KING JR.",
+                "numero": "00126",
+                "complemento": "BLC 2 CRECHE",
+                "cep": "20765000",
+                "bairro": "DEL CASTILHO",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "RIO DE JANEIRO",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "ae2d59c8-535e-4d6d-9deb-a47b42e3e422",
+                "tipo_logradouro": "av",
+                "logradouro": "PASTOR MARTIN LUTHER KING JR.",
+                "numero": "00126",
+                "complemento": "BLC 2 CRECHE",
+                "cep": "20765000",
+                "bairro": "DEL CASTILHO",
+                "tipo": "cobranca",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "RIO DE JANEIRO",
+                "atualizado_em": "2016-07-08T22:53:26"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "74679f2f-0f04-4f3c-bbef-e88d8c68456d",
+        "id": "03691604000110",
+        "codigo": "75838",
+        "qualificacao": "juridica",
+        "nome": "A T I V A Grafica Carimbos Panfletos Crachas",
+        "criado_em": "2015-03-23",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "152fe3c6-1d7f-478b-8663-3d0087aa7b92",
+                "nome": "FLAVIO LUCIO LISBOA SILVA - ME",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "c656e1ba-036b-453a-a405-5cf745564bfb",
+                "tipo_logradouro": null,
+                "logradouro": "PQ SOLON DE LUCENA, 142 SALA 08",
+                "numero": null,
+                "complemento": null,
+                "cep": "58013131",
+                "bairro": "CENTRO",
+                "tipo": "local",
+                "uf": "pb",
+                "ibge": "2507507",
+                "cidade": "João Pessoa",
+                "atualizado_em": "2015-06-03T16:22:14"
+            },
+            {
+                "endereco": "7156a2fb-0c95-41ee-bf8a-07a7f9857f1b",
+                "tipo_logradouro": "prq",
+                "logradouro": "Solon de Lucena",
+                "numero": "00142",
+                "complemento": "sala 08",
+                "cep": "58013131",
+                "bairro": "centro",
+                "tipo": "cobranca",
+                "uf": "pb",
+                "ibge": "2507507",
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:53:26"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "95035f8e-bdc6-4956-acb0-a920cfe11658",
+        "id": "18516941000148",
+        "codigo": "75891",
+        "qualificacao": "juridica",
+        "nome": "BR OUTSOURCING SERVICOS CONTABEIS LTDA",
+        "criado_em": "2014-01-17",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "d31468c0-bb32-4a1b-a090-17acb4470571",
+                "nome": "Anderson",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "1f825b4c-0949-4f11-bc4f-f628a0218b1b",
+                "nome": "BR OUTSOURCING",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "537443b7-52b5-463f-8629-14a53eec19c3",
+                "nome": "CARLOS JESUS VIEIRA",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "3656b175-7275-40f0-bb7b-97e1fa9510c3",
+                "nome": "Contato Padrão",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": "Padrão",
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "2aec6ee9-76d3-4cf1-8607-831dd4abb9bb",
+                "tipo_logradouro": "r",
+                "logradouro": "PINTO DE CAMPOS , LOT 13",
+                "numero": "163",
+                "complemento": "LOT 13",
+                "cep": "21550270",
+                "bairro": "OSWALDO CRUZ",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "Rio de Janeiro",
+                "atualizado_em": "2016-03-24T15:11:15"
+            },
+            {
+                "endereco": "962b7593-b0a1-4192-a020-cdf28cce81f6",
+                "tipo_logradouro": "r",
+                "logradouro": "PINTO DE CAMPOS , LOT 13",
+                "numero": "163",
+                "complemento": "LOT 13",
+                "cep": "21550270",
+                "bairro": "OSWALDO CRUZ",
+                "tipo": "cobranca",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "Rio de Janeiro",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "e06d411c-232c-4dd9-b058-64b216974887",
+                "tipo_logradouro": "r",
+                "logradouro": "PINTO DE CAMPOS , LOT 13",
+                "numero": "163",
+                "complemento": "LOT 13",
+                "cep": "21550270",
+                "bairro": "OSWALDO CRUZ",
+                "tipo": "entrega",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "Rio de Janeiro",
+                "atualizado_em": "2022-08-24T11:56:11"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "f517153d-6449-4d32-aa51-0153b7d293cb",
+        "id": "19447217000172",
+        "codigo": "75926",
+        "qualificacao": "juridica",
+        "nome": "ACESS COMERCIO E SERVICOS DE INFORMATICA LTDA",
+        "criado_em": "2014-01-22",
+        "atualizado_em": "2024-02-28T23:12:19",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "87f52d62-4b61-4cf1-8f7e-1659b271d6e9",
+                "nome": "ACESS SERVICOS DE SUPORTE  e Clenylton C  Almeida",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "b2350d80-95e0-478e-85be-bebfb1c5590f",
+                "nome": "ACESS SERVICOS DE SUPORTE  e Clenylton C  Almeida",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "1043896d-8e20-4ba7-a4c0-66ade7588185",
+                "nome": "Clenylton C De Almeida",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "a4cbd785-5436-4c8b-a3e8-d49a5a5f7090",
+                "nome": "Leymax",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "7553cc17-ba22-42ae-9096-7a2da969bcdc",
+                "tipo_logradouro": "rod",
+                "logradouro": "BR-230",
+                "numero": "SN",
+                "complemento": "COND JARDIM FLORESTA CASA 131",
+                "cep": "58705275",
+                "bairro": "SETE CASAS",
+                "tipo": "local",
+                "uf": "pb",
+                "ibge": "2510808",
+                "cidade": "PATOS",
+                "atualizado_em": "2015-06-18T15:33:55"
+            },
+            {
+                "endereco": "bef2ec3a-4111-4708-a0ee-529f74dc3d38",
+                "tipo_logradouro": "rod",
+                "logradouro": "BR-230",
+                "numero": "SN",
+                "complemento": "COND JARDIM FLORESTA CASA 131",
+                "cep": "58705275",
+                "bairro": "SETE CASAS",
+                "tipo": "cobranca",
+                "uf": "pb",
+                "ibge": "2510808",
+                "cidade": "PATOS",
+                "atualizado_em": "2020-03-02T16:59:23"
+            },
+            {
+                "endereco": "fdbda75a-8513-4100-9962-22327b40cc68",
+                "tipo_logradouro": "rod",
+                "logradouro": "BR-230",
+                "numero": "SN",
+                "complemento": "COND JARDIM FLORESTA CASA 131",
+                "cep": "58705275",
+                "bairro": "SETE CASAS",
+                "tipo": "entrega",
+                "uf": "pb",
+                "ibge": "2510808",
+                "cidade": "PATOS",
+                "atualizado_em": "2022-08-24T11:56:11"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "03fc02c6-6c9b-412a-9438-aacde63f4fd2",
+        "id": "07491190000136",
+        "codigo": "76015",
+        "qualificacao": "juridica",
+        "nome": "KIMERCADO.COM PROCESSAMENTO DE DADOS LTDA - ME",
+        "criado_em": "2014-01-29",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": true,
+        "contatos": [
+            {
+                "id": "8cf3c0e0-2dbc-40cb-8622-06eba5ce8669",
+                "nome": "Contato Padrão",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": "Contato",
+                "sobre_nome": "Padrão",
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "e988f06c-e370-4289-be89-6a6b351e07e0",
+                "nome": "MAURO DA FONSECA",
+                "nascimento": "1899-12-30",
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "c9649ddd-07be-476f-b76f-fcf866958996",
+                "nome": "THIAGO",
+                "nascimento": "1899-12-30",
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "70b52f84-f338-4840-a1b7-d4474094cb32",
+                "nome": "VICTOR",
+                "nascimento": "1899-12-30",
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "9d72f393-3c71-44f5-9b3a-0d500cf5b04c",
+                "tipo_logradouro": "r",
+                "logradouro": "Júlio César",
+                "numero": "16",
+                "complemento": "SL 208",
+                "cep": "27283320",
+                "bairro": "Retiro Volta Redonda",
+                "tipo": "cobranca",
+                "uf": "rj",
+                "ibge": "3306305",
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "a68404d2-6c28-487a-a98a-d95d55cb75e8",
+                "tipo_logradouro": null,
+                "logradouro": "Rua Julio Cesar, 16 sala 208",
+                "numero": null,
+                "complemento": null,
+                "cep": "27283320",
+                "bairro": "Retiro",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3306305",
+                "cidade": "Volta Redonda",
+                "atualizado_em": "2015-01-08T17:37:46"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "06180973-6644-4467-9a9a-84ae56d0e669",
+        "id": "07629282000130",
+        "codigo": "76097",
+        "qualificacao": "juridica",
+        "nome": "KI 2005 PRODUTOS ALIMENTICIOS LTDA - ME",
+        "criado_em": "2014-02-04",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "be2efbc2-5504-4a10-97e7-92400732ca1e",
+                "nome": "Contato Padrão",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": "Contato",
+                "sobre_nome": "Padrão",
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "37812c4e-abbe-4f56-bf03-067705deb1ce",
+                "nome": "KI DOGUINHO",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "898e1cdf-1b75-40f9-88fe-27c152d6baa9",
+                "nome": "LUANNA",
+                "nascimento": "1899-12-30",
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "bd515b76-c60e-482d-8380-66a464909fee",
+                "tipo_logradouro": "r",
+                "logradouro": "ASSUNCAO",
+                "numero": "204",
+                "complemento": "GALPAO5",
+                "cep": "",
+                "bairro": "",
+                "tipo": "cobranca",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "bfdfbc2e-5dc1-4218-a214-48ba2ccc7555",
+                "tipo_logradouro": "r",
+                "logradouro": "ASSUNÇÃO",
+                "numero": "204",
+                "complemento": "GALPAO 5",
+                "cep": "22251030",
+                "bairro": "Botafogo",
+                "tipo": "entrega",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "78e23034-d4eb-469a-a0aa-ba7892068e09",
+                "tipo_logradouro": null,
+                "logradouro": "RUA ASSUNÇÃO, 204 GALPÃO 5",
+                "numero": null,
+                "complemento": null,
+                "cep": "22251030",
+                "bairro": "BOTAFOGO",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "Rio de Janeiro",
+                "atualizado_em": "2015-05-18T19:02:18"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "ed529ab0-7c68-42b6-a242-7b232901c537",
+        "id": "11209430000134",
+        "codigo": "76129",
+        "qualificacao": "juridica",
+        "nome": "EASYTS ASSESSORIA LINGUISTICA LTDA - ME",
+        "criado_em": "2014-02-06",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "4d4d3961-1a31-40eb-830b-c953f2dc93c8",
+                "nome": "ANA PAULA",
+                "nascimento": "1899-12-30",
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "e1ef068b-9d3f-414d-8afe-205308321ccd",
+                "nome": "Bruno Rodrigo Souza",
+                "nascimento": "1899-12-30",
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "334be235-ce1f-4eca-843e-0ad89149d3b1",
+                "nome": "Contato Padrão",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": "Contato",
+                "sobre_nome": "Padrão",
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "7e47e62d-1346-41e3-8c07-ad8af579d516",
+                "nome": "EASYTS ASSESSORIA LINGUISTICA LTDA - ME",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "423bbe69-b6b0-4af0-8024-1832ed302b5b",
+                "tipo_logradouro": null,
+                "logradouro": "AVN RIO BRANCO 185, SLS 526, 527, 1218 E 1219,185 SLS 526, 5",
+                "numero": null,
+                "complemento": null,
+                "cep": "20040902",
+                "bairro": "CENTRO",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "Rio de Janeiro",
+                "atualizado_em": "2015-05-18T19:02:18"
+            },
+            {
+                "endereco": "c35579bc-0b95-4876-a1cc-129691c2d2cb",
+                "tipo_logradouro": "av",
+                "logradouro": "RIO BRANCO",
+                "numero": "185",
+                "complemento": "1219",
+                "cep": "20040007",
+                "bairro": "CENTRO",
+                "tipo": "entrega",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "f2bd3c41-8df2-4c97-9800-19f92a84f496",
+                "tipo_logradouro": "av",
+                "logradouro": "RIO BRANCO",
+                "numero": "181",
+                "complemento": "181",
+                "cep": "20040007",
+                "bairro": "SALA 1104 , 1105 E 1106",
+                "tipo": "cobranca",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:53:26"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "e79368ee-6a38-4dfb-b70f-a6254c2ae2c7",
+        "id": "42493940000100",
+        "codigo": "76202",
+        "qualificacao": "juridica",
+        "nome": "AMBIENT AIR AR CONDICIONADO  LTDA",
+        "criado_em": "2014-02-12",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": true,
+        "contatos": [
+            {
+                "id": "c8a0d035-b533-4aec-b2a2-be634a08784b",
+                "nome": "ALEXANDRE SAUL",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "ab139e48-980f-48e7-bc61-0b120393bc4e",
+                "nome": "Ambient Air Ar Condicionado Ltda",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "b458512b-b3e5-4e10-b341-1863b905a82e",
+                "nome": "Contato Padrão",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": "Contato",
+                "sobre_nome": "Padrão",
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "c2c2b742-73a7-4e88-b0b7-1bccf2b6cb78",
+                "nome": "Luiz",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": "Frias",
+                "cpf": null,
+                "atualizado_em": "2023-04-18T13:35:48"
+            },
+            {
+                "id": "c6424d4d-174d-4002-ac02-e2e92202f34e",
+                "nome": "RONALDO",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "f114b4c8-a14d-450f-bae5-8595d32dd52d",
+                "nome": "UBIRATA",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "374427fd-b924-4574-a6f3-3616d9119238",
+                "tipo_logradouro": "r",
+                "logradouro": "TEIXEIRA RIBEIRO",
+                "numero": "278",
+                "complemento": "292",
+                "cep": "21040242",
+                "bairro": "RAMOS",
+                "tipo": "cobranca",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "Rio de Janeiro",
+                "atualizado_em": "2016-07-08T22:48:04"
+            },
+            {
+                "endereco": "46d08468-68f6-4f02-adfa-cd8edf4e9ca9",
+                "tipo_logradouro": "r",
+                "logradouro": "TEIXEIRA RIBEIRO",
+                "numero": "278",
+                "complemento": "292",
+                "cep": "21040242",
+                "bairro": "RAMOS",
+                "tipo": "entrega",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "Rio de Janeiro",
+                "atualizado_em": "2016-07-08T22:48:04"
+            },
+            {
+                "endereco": "9a4dec57-aa0a-432e-b0b2-60c2adf9d690",
+                "tipo_logradouro": "r",
+                "logradouro": "TEIXEIRA RIBEIRO",
+                "numero": "278",
+                "complemento": "292",
+                "cep": "21040242",
+                "bairro": "RAMOS",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "Rio de Janeiro",
+                "atualizado_em": "2016-07-08T22:48:04"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "bf84dfd4-c469-46dd-ab84-269876c0d357",
+        "id": "15364701000187",
+        "codigo": "76211",
+        "qualificacao": "juridica",
+        "nome": "UCHOA CONTABILIDADE EMPRESARIAL LTDA",
+        "criado_em": "2014-02-12",
+        "atualizado_em": "2024-07-08T13:43:15",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "9108c257-4e8a-4d2f-9272-6bb8be73104a",
+                "nome": "Contato Padrão",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": "Padrão",
+                "cpf": null,
+                "atualizado_em": "2024-08-08T17:12:54"
+            },
+            {
+                "id": "554bdf49-366e-47fd-8ffa-8727bbda9e52",
+                "nome": "UCHOA CONTABILIDADE e Antonio Uchoa da Silva Junior",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2024-08-08T17:12:54"
+            },
+            {
+                "id": "87755b43-be4b-4027-892b-4a3e7b5afb0e",
+                "nome": "UCHOA CONTABILIDADE e Antonio Uchoa da Silva Junior",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2024-08-08T17:12:54"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "82baa980-12db-4fde-8291-44bca338f411",
+                "tipo_logradouro": "r",
+                "logradouro": "E",
+                "numero": "22",
+                "complemento": "CONJ EUCLIDES FIGUEIREDO SALA 02",
+                "cep": "66620760",
+                "bairro": "MARAMBAIA",
+                "tipo": "local",
+                "uf": "pa",
+                "ibge": "1501402",
+                "cidade": "BELEM",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "b6525d5c-1469-48a6-be0b-ac314f6fe35f",
+                "tipo_logradouro": "r",
+                "logradouro": "E",
+                "numero": "22",
+                "complemento": "CONJ EUCLIDES FIGUEIREDO SALA 02",
+                "cep": "66620760",
+                "bairro": "MARAMBAIA",
+                "tipo": "entrega",
+                "uf": "pa",
+                "ibge": "1501402",
+                "cidade": "BELEM",
+                "atualizado_em": "2022-08-24T11:56:11"
+            },
+            {
+                "endereco": "eb8cdd38-cdf5-4cf4-9600-6d365db7c15f",
+                "tipo_logradouro": "r",
+                "logradouro": "E",
+                "numero": "22",
+                "complemento": "CONJ EUCLIDES FIGUEIREDO SALA 02",
+                "cep": "66620760",
+                "bairro": "MARAMBAIA",
+                "tipo": "cobranca",
+                "uf": "pa",
+                "ibge": "1501402",
+                "cidade": "BELEM",
+                "atualizado_em": "2016-07-08T22:53:26"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "76d2f8a2-74c2-4a12-b77b-08872cce0211",
+        "id": "32449076000195",
+        "codigo": "76592",
+        "qualificacao": "juridica",
+        "nome": "DATABELLI AUTOMACAO COMERCIAL LTDA - ME",
+        "criado_em": "2014-03-26",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "fcf4cf38-a8e9-4f31-b5c9-3ce1325559ce",
+                "nome": "Contato Padrão",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": "Contato",
+                "sobre_nome": "Padrão",
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "a7421890-70c6-40f1-96dd-17785950c5b4",
+                "nome": "DATABELLI AUTOMACAO COMERCIAL LTDA - ME",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "ced8f584-fdf6-49b0-a5b6-f0989ff58bb9",
+                "nome": "PEDRO ERNESTO ZAMBELLI DE ALMEIDA",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "d0d26959-8afa-40e9-ba07-f649c70f16ce",
+                "tipo_logradouro": "r",
+                "logradouro": "JOSE ALEXANDRE BUAIZ",
+                "numero": "300",
+                "complemento": "SALA: 1405 ; GARAGE: 02;",
+                "cep": "29050545",
+                "bairro": "ENSEADA DO SUA",
+                "tipo": "cobranca",
+                "uf": "es",
+                "ibge": "3205309",
+                "cidade": null,
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "02da13ce-b079-45b8-a368-2125696dea39",
+                "tipo_logradouro": null,
+                "logradouro": "Rua José Alexandre Buaiz, 300 sala 1405",
+                "numero": null,
+                "complemento": null,
+                "cep": "29050545",
+                "bairro": "Enseada de Suá",
+                "tipo": "local",
+                "uf": "es",
+                "ibge": "3205309",
+                "cidade": "Vitória",
+                "atualizado_em": "2015-01-08T17:37:46"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "afcefb13-d113-48d8-b944-22a5adce10ff",
+        "id": "20676463000185",
+        "codigo": "77089",
+        "qualificacao": "juridica",
+        "nome": "DELICIA CENTRO COMERCIO BISCOITOS LTDA",
+        "criado_em": "2015-03-24",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "75b6c02d-b215-4906-a62d-cb109e28342d",
+                "nome": "DELICIA CENTRO COMERCIO BISCOITOS LTDA",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "2b4f2c23-920e-49fc-8ea8-bde9bb5969df",
+                "tipo_logradouro": "",
+                "logradouro": "",
+                "numero": "",
+                "complemento": "",
+                "cep": "",
+                "bairro": "",
+                "tipo": "local",
+                "uf": "",
+                "ibge": null,
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:48:04"
+            },
+            {
+                "endereco": "966f271a-8af5-4273-aab4-0bd74bcc0ab6",
+                "tipo_logradouro": "",
+                "logradouro": "",
+                "numero": "",
+                "complemento": "",
+                "cep": "",
+                "bairro": "",
+                "tipo": "cobranca",
+                "uf": "",
+                "ibge": null,
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:48:04"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "264d1999-19cd-44cc-9c2c-3cccac6a6fe4",
+        "id": "01993616000173",
+        "codigo": "77396",
+        "qualificacao": "juridica",
+        "nome": "PRESIDENTE VARGAS POINT SUPER LANCHES LTDA",
+        "criado_em": "2015-03-30",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "7332d7fc-ce14-48a1-927f-4dc4800f49bc",
+                "nome": "PRESIDENTE VARGAS POINT SUPER LANCHES LTDA",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "77bde537-63a5-4544-ba0d-eb5a2b086cd3",
+                "tipo_logradouro": "",
+                "logradouro": "",
+                "numero": "",
+                "complemento": "",
+                "cep": "",
+                "bairro": "",
+                "tipo": "cobranca",
+                "uf": "",
+                "ibge": null,
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:48:04"
+            },
+            {
+                "endereco": "8055d13a-608f-4a90-a596-82e75f7b379f",
+                "tipo_logradouro": "",
+                "logradouro": "",
+                "numero": "",
+                "complemento": "",
+                "cep": "",
+                "bairro": "",
+                "tipo": "local",
+                "uf": "",
+                "ibge": null,
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:48:04"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "8b7d0078-421f-42e0-8ca8-bd6d4e48a347",
+        "id": "14028590000175",
+        "codigo": "77532",
+        "qualificacao": "juridica",
+        "nome": "FABRICIO LOUREIRO DOS SANTOS COMERCIO DE INFORMATICA-ME",
+        "criado_em": "2015-04-01",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "5c725594-0ccc-499f-a141-c60da22e9659",
+                "nome": "FABRICIO LOUREIRO DOS SANTOS COMERCIO DE INFORMATICA-ME - Digital 70",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "63e129b8-68f1-44e7-bf55-cf32522d7fd1",
+                "tipo_logradouro": null,
+                "logradouro": "AVN RIO BRANCO, 156  SBL 204 STD 207",
+                "numero": null,
+                "complemento": null,
+                "cep": "20040003",
+                "bairro": "CENTRO",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "Rio de Janeiro",
+                "atualizado_em": "2015-06-03T16:22:14"
+            },
+            {
+                "endereco": "613678f9-d364-4195-872e-41e497289d95",
+                "tipo_logradouro": "av",
+                "logradouro": "RIO BRANCO",
+                "numero": "156",
+                "complemento": "SBL 204 STD 207",
+                "cep": "20040003",
+                "bairro": "CENTRO",
+                "tipo": "cobranca",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:53:26"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "77279365-dcd9-4afa-84c0-0ee48c1bfe5c",
+        "id": "09208410000105",
+        "codigo": "77852",
+        "qualificacao": "juridica",
+        "nome": "Elastos Equipamentos Esportivos Ltda.",
+        "criado_em": "2015-04-08",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "08fb8d1d-caf9-4fd9-afbb-e1caa3225fbe",
+                "nome": "Elastos Equipamentos Esportivos Ltda.",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "6b2284d3-8970-4a08-b3b6-791c627afdfa",
+                "nome": "Felipe",
+                "nascimento": "1899-12-30",
+                "sexo": null,
+                "primeiro_nome": "Felipe",
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "8d5fa826-d226-4d10-a35a-f96cef5cf7c4",
+                "tipo_logradouro": "r",
+                "logradouro": "Rua da Conceição",
+                "numero": "145",
+                "complemento": "Parte",
+                "cep": "20080031",
+                "bairro": "Centro",
+                "tipo": "cobranca",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "9b5ed67b-5b44-4df5-b308-9a95981ce202",
+                "tipo_logradouro": null,
+                "logradouro": "Rua da Conceição, 145  Parte",
+                "numero": null,
+                "complemento": null,
+                "cep": "20080031",
+                "bairro": "Centro",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "Rio de Janeiro",
+                "atualizado_em": "2015-06-03T16:22:14"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "d3a1a815-46cb-4d58-b4d4-ae42f279c6d4",
+        "id": "08251766000150",
+        "codigo": "77998",
+        "qualificacao": "juridica",
+        "nome": "NITGAS DO BRASIL POSTO DE GAS NAT. VEICUL. LTDA",
+        "criado_em": "2015-04-10",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "b6bbbd96-3a38-41d5-a77f-e5c05cd1ebbb",
+                "nome": "NITGAS DO BRASIL POSTO DE GAS NAT. VEICUL. LTDA",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "cda442ef-db13-45e2-8b17-a1ffc956cf7a",
+                "tipo_logradouro": "",
+                "logradouro": "",
+                "numero": "",
+                "complemento": "",
+                "cep": "",
+                "bairro": "",
+                "tipo": "local",
+                "uf": "",
+                "ibge": null,
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:48:04"
+            },
+            {
+                "endereco": "e4e58445-7be8-4986-b3d0-1c30695b451b",
+                "tipo_logradouro": "",
+                "logradouro": "",
+                "numero": "",
+                "complemento": "",
+                "cep": "",
+                "bairro": "",
+                "tipo": "cobranca",
+                "uf": "",
+                "ibge": null,
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:48:04"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "347c4234-fc79-48e9-ba8c-e45d1b219fc1",
+        "id": "30128987000195",
+        "codigo": "78000",
+        "qualificacao": "juridica",
+        "nome": "POSTO E SERVICOS MAPUA LTDA",
+        "criado_em": "2015-04-10",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "3d2cc00e-4f50-4928-b839-b32f28626129",
+                "nome": "POSTO E SERVICOS MAPUA LTDA",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "0196f5d9-6b3c-419a-a769-3915807d085c",
+                "tipo_logradouro": "",
+                "logradouro": "",
+                "numero": "",
+                "complemento": "",
+                "cep": "",
+                "bairro": "",
+                "tipo": "local",
+                "uf": "",
+                "ibge": null,
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:48:04"
+            },
+            {
+                "endereco": "895defdd-1917-4942-8915-f327543623c2",
+                "tipo_logradouro": "",
+                "logradouro": "",
+                "numero": "",
+                "complemento": "",
+                "cep": "",
+                "bairro": "",
+                "tipo": "cobranca",
+                "uf": "",
+                "ibge": null,
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:48:04"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "99cc9f1e-ca6d-40c4-b924-f32e3f271be6",
+        "id": "22209505000101",
+        "codigo": "78038",
+        "qualificacao": "juridica",
+        "nome": "GIGADOC INFORMATICA, SISTEMAS E CONSULTORIA - BORGES E BIAGE LTDA - ME",
+        "criado_em": "2015-04-13",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "229c3561-72f0-411a-9d76-a8b771c34aa4",
+                "nome": "ALEX BIAGE",
+                "nascimento": "1899-12-30",
+                "sexo": null,
+                "primeiro_nome": "ALEX",
+                "sobre_nome": "BIAGE",
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "fb048a63-1909-4c4b-95e3-52e41f24e17d",
+                "nome": "GIGADOC INFORMATICA, SISTEMAS E CONSULTORIA - BORGES E BIAGE LTDA - ME",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "7c662297-bb79-49f4-93f9-2f6077eaea10",
+                "nome": "NILVAN BORGES",
+                "nascimento": "1899-12-30",
+                "sexo": null,
+                "primeiro_nome": "NILVAN",
+                "sobre_nome": "BORGES",
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "dc46253e-e20c-4b05-bf27-3f2fcd7434a0",
+                "tipo_logradouro": "r",
+                "logradouro": "229, QD/37-A, LT/25",
+                "numero": "199",
+                "complemento": "",
+                "cep": "74535250",
+                "bairro": "SETOR COIMBRA",
+                "tipo": "cobranca",
+                "uf": "go",
+                "ibge": "5208707",
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "ca103257-fd0a-422c-9b52-86d5d68f682b",
+                "tipo_logradouro": null,
+                "logradouro": "Rua 229,n 199  qd 37a lt 25",
+                "numero": null,
+                "complemento": null,
+                "cep": "74535250",
+                "bairro": "set coimbra",
+                "tipo": "local",
+                "uf": "go",
+                "ibge": "5208707",
+                "cidade": "Goiânia",
+                "atualizado_em": "2015-06-18T15:33:55"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "9c214ce7-2f11-470c-b68a-ad8c38cc8150",
+        "id": "09260657000162",
+        "codigo": "78306",
+        "qualificacao": "juridica",
+        "nome": "RIO NOMADE SERVICOS DE INFORMATICA EIRELI ME",
+        "criado_em": "2015-04-16",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "e84eea69-0552-4b55-90ac-f9201959eda3",
+                "nome": "RIO NOMADE SERVICOS DE INFORMATICA EIRELI ME",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "8136e5b0-05be-4766-8989-823f3a2fb9cb",
+                "tipo_logradouro": "av",
+                "logradouro": "Rio Branco",
+                "numero": "",
+                "complemento": "",
+                "cep": "",
+                "bairro": "",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:48:04"
+            },
+            {
+                "endereco": "c4ed3707-cccb-4056-a189-1d18cc7ab410",
+                "tipo_logradouro": "av",
+                "logradouro": "Rio Branco",
+                "numero": "",
+                "complemento": "",
+                "cep": "",
+                "bairro": "",
+                "tipo": "cobranca",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:48:04"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "e1bbf929-b5d5-4f44-9bf2-d1e072a5b4d0",
+        "id": "01257063758",
+        "codigo": "7840",
+        "qualificacao": "fisica",
+        "nome": "ANGELO GUIMARAES DA CRUZ",
+        "criado_em": "2010-12-16",
+        "atualizado_em": "2024-07-08T13:45:02",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "91fc22a2-ef27-4eed-897b-90a1cd2215da",
+                "nome": "AG DA CRUZ CONTABILIDADE ME e ANGELO  GUIMARAES DA CRUZ",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-12-06T11:57:50"
+            },
+            {
+                "id": "d0934d61-8e10-4e90-8ac8-089fea5e737e",
+                "nome": "AG DA CRUZ CONTABILIDADE ME e ANGELO  GUIMARAES DA CRUZ",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-12-06T11:57:50"
+            },
+            {
+                "id": "9156d2a5-b5e7-40d2-b920-fbf4b505917c",
+                "nome": "Ana",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": "Guimaraes",
+                "cpf": null,
+                "atualizado_em": "2022-12-06T11:57:50"
+            },
+            {
+                "id": "9cc4eebf-0571-4ca2-a898-4b704f6be3a5",
+                "nome": "Ana",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": "Guimaraes",
+                "cpf": null,
+                "atualizado_em": "2024-04-17T18:09:19"
+            },
+            {
+                "id": "d9163a92-622b-44f8-a84e-75a7b2a6f455",
+                "nome": "ANA CLARA FIGUEIRA GUIMARAES",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-12-06T11:57:50"
+            },
+            {
+                "id": "65b2dbd0-865b-4dec-8ab0-8c194f93656d",
+                "nome": "Contato Padrão",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": "Padrão",
+                "cpf": null,
+                "atualizado_em": "2022-12-06T11:57:50"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "1c3e372b-bdc4-476d-9363-cb728b4abe83",
+                "tipo_logradouro": "av",
+                "logradouro": "ERNANI DO AMARAL PEIXOTO , SALA 804",
+                "numero": "455",
+                "complemento": "BL 3 APTO 208",
+                "cep": "24020072",
+                "bairro": "CENTRO",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3303302",
+                "cidade": "Niterói",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "46348d18-94e6-45d7-a4b7-e0d7d496da76",
+                "tipo_logradouro": "av",
+                "logradouro": "ERNANI DO AMARAL PEIXOTO , SALA 804",
+                "numero": "455",
+                "complemento": "BL 3 APTO 208",
+                "cep": "24020072",
+                "bairro": "CENTRO",
+                "tipo": "entrega",
+                "uf": "rj",
+                "ibge": "3303302",
+                "cidade": "Niterói",
+                "atualizado_em": "2022-08-24T11:56:11"
+            },
+            {
+                "endereco": "69e16688-838e-4400-b689-e3e91150cff1",
+                "tipo_logradouro": "av",
+                "logradouro": "ERNANI DO AMARAL PEIXOTO , SALA 804",
+                "numero": "455",
+                "complemento": "BL 3 APTO 208",
+                "cep": "24020072",
+                "bairro": "CENTRO",
+                "tipo": "cobranca",
+                "uf": "rj",
+                "ibge": "3303302",
+                "cidade": "Niterói",
+                "atualizado_em": "2016-07-08T22:53:26"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "8ed03e39-646b-46b6-979d-e5758c19c34e",
+        "id": "07504705500",
+        "codigo": "78649",
+        "qualificacao": "fisica",
+        "nome": "Manoel Barbosa Neto",
+        "criado_em": "2015-04-27",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "83ae0022-e65c-4ff6-a919-bcef4f4451f7",
+                "nome": "Contato Padrão",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": "Contato",
+                "sobre_nome": "Padrão",
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "d0ba9a67-05d9-49d7-86cb-3d533fbea7f0",
+                "nome": "MANOEL BARBOSA NETO",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "890f2a4e-3725-4b7d-bfc2-55dac1db3f18",
+                "tipo_logradouro": "r",
+                "logradouro": "J SE AFONSO NOVAES , APARTAMENTO B",
+                "numero": "123",
+                "complemento": "APARTAMENTO B",
+                "cep": "56400000",
+                "bairro": "CENTRO",
+                "tipo": "cobranca",
+                "uf": "pe",
+                "ibge": "2605707",
+                "cidade": "Floresta",
+                "atualizado_em": "2016-07-08T22:48:04"
+            },
+            {
+                "endereco": "b6f5958b-358f-4ae2-a693-d5e914a0995a",
+                "tipo_logradouro": "r",
+                "logradouro": "J SE AFONSO NOVAES , APARTAMENTO B",
+                "numero": "123",
+                "complemento": "APARTAMENTO B",
+                "cep": "56400000",
+                "bairro": "CENTRO",
+                "tipo": "entrega",
+                "uf": "pe",
+                "ibge": "2605707",
+                "cidade": "Floresta",
+                "atualizado_em": "2022-08-24T11:56:11"
+            },
+            {
+                "endereco": "bf48213f-1777-479a-bb58-cedab34dde56",
+                "tipo_logradouro": "r",
+                "logradouro": "J SE AFONSO NOVAES , APARTAMENTO B",
+                "numero": "123",
+                "complemento": "APARTAMENTO B",
+                "cep": "56400000",
+                "bairro": "CENTRO",
+                "tipo": "local",
+                "uf": "pe",
+                "ibge": "2605707",
+                "cidade": "Floresta",
+                "atualizado_em": "2016-07-08T22:48:04"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "cea2a288-973a-4a2b-91e8-57eaaf519d15",
+        "id": "10408050000166",
+        "codigo": "78719",
+        "qualificacao": "juridica",
+        "nome": "",
+        "criado_em": "2015-04-27",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "50a9ca9c-6c89-4cba-ad4c-4625a7a60d67",
+                "nome": "INTERATIVA CONSULTORIA E DESENVOLVIMENTO DE SOFTWARE LTDA",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "3951866f-3ff1-4c6b-9867-cc19f9a35ed7",
+                "tipo_logradouro": null,
+                "logradouro": "Avenida João Ribeiro, 1466",
+                "numero": null,
+                "complemento": null,
+                "cep": "49065000",
+                "bairro": "Industrial",
+                "tipo": "local",
+                "uf": "se",
+                "ibge": "2800308",
+                "cidade": "Aracaju",
+                "atualizado_em": "2015-06-03T16:22:14"
+            },
+            {
+                "endereco": "8bbe942d-df61-4ae2-8abb-1929c445b12f",
+                "tipo_logradouro": "av",
+                "logradouro": "João Ribeiro",
+                "numero": "1466",
+                "complemento": "",
+                "cep": "49065000",
+                "bairro": "Industrial",
+                "tipo": "cobranca",
+                "uf": "se",
+                "ibge": "2800308",
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:53:26"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "e5d30938-5bdd-404f-a060-11d8693984bb",
+        "id": "12260606000145",
+        "codigo": "78884",
+        "qualificacao": "juridica",
+        "nome": "RNP INFORMATICA LTDA - BETA INFO",
+        "criado_em": "2015-04-30",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "22cb024f-f1ea-47cb-b271-92b1d604d3b5",
+                "nome": "RNP INFORMATICA LTDA - BETA INFO",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "7ce1954b-6bb4-46a7-a101-c9db87e0b504",
+                "tipo_logradouro": "",
+                "logradouro": "",
+                "numero": "",
+                "complemento": "",
+                "cep": "",
+                "bairro": "",
+                "tipo": "local",
+                "uf": "",
+                "ibge": null,
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:48:04"
+            },
+            {
+                "endereco": "a20f2461-7f59-4b68-b976-03519cbd2a9d",
+                "tipo_logradouro": "",
+                "logradouro": "",
+                "numero": "",
+                "complemento": "",
+                "cep": "",
+                "bairro": "",
+                "tipo": "cobranca",
+                "uf": "",
+                "ibge": null,
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:48:04"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "8460c9fb-e1d3-4e54-9603-b5c315858442",
+        "id": "12404942000114",
+        "codigo": "789",
+        "qualificacao": "juridica",
+        "nome": "ESG COMERCIO LTDA ME",
+        "criado_em": "2019-12-13",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [],
+        "enderecos": [
+            {
+                "endereco": "b5da0052-7f32-494e-a68e-daf868b2d682",
+                "tipo_logradouro": null,
+                "logradouro": null,
+                "numero": null,
+                "complemento": null,
+                "cep": "01537001",
+                "bairro": null,
+                "tipo": "local",
+                "uf": "sp",
+                "ibge": "3550308",
+                "cidade": "São Paulo",
+                "atualizado_em": "2019-12-13T12:10:11"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "b0b58e35-474a-4ee3-8471-318da7728473",
+        "id": "07170938014078",
+        "codigo": "78993",
+        "qualificacao": "juridica",
+        "nome": "Cnova Comercio Eletronico S/a",
+        "criado_em": "2015-05-05",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "4c073562-45cd-48b8-9bb7-760203fd0b45",
+                "nome": "Pontofrio.com",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "9bd873ff-cb29-439a-a600-0100a265e384",
+                "tipo_logradouro": "rod",
+                "logradouro": "Anhagueira  - Vila Militar",
+                "numero": "52",
+                "complemento": "",
+                "cep": "13203850",
+                "bairro": "",
+                "tipo": "cobranca",
+                "uf": "rn",
+                "ibge": "2406155",
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "a310b0a6-f7b2-42f6-92bd-b7dc1bac0712",
+                "tipo_logradouro": null,
+                "logradouro": "ROD ANHANGUERA KM 52, 0  350 METRO CD II B",
+                "numero": null,
+                "complemento": null,
+                "cep": "13203850",
+                "bairro": "VILA MILITAR",
+                "tipo": "local",
+                "uf": "sp",
+                "ibge": "3525904",
+                "cidade": "JUNDIAI",
+                "atualizado_em": "2015-06-18T15:33:55"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "b0b58e35-474a-4ee3-8471-318da7728473",
+        "id": "07170938014078",
+        "codigo": "78993",
+        "qualificacao": "juridica",
+        "nome": "Cnova Comercio Eletronico S/a",
+        "criado_em": "2015-05-05",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "4c073562-45cd-48b8-9bb7-760203fd0b45",
+                "nome": "Pontofrio.com",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "9bd873ff-cb29-439a-a600-0100a265e384",
+                "tipo_logradouro": "rod",
+                "logradouro": "Anhagueira  - Vila Militar",
+                "numero": "52",
+                "complemento": "",
+                "cep": "13203850",
+                "bairro": "",
+                "tipo": "cobranca",
+                "uf": "rn",
+                "ibge": "2406155",
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "a310b0a6-f7b2-42f6-92bd-b7dc1bac0712",
+                "tipo_logradouro": null,
+                "logradouro": "ROD ANHANGUERA KM 52, 0  350 METRO CD II B",
+                "numero": null,
+                "complemento": null,
+                "cep": "13203850",
+                "bairro": "VILA MILITAR",
+                "tipo": "local",
+                "uf": "sp",
+                "ibge": "3525904",
+                "cidade": "JUNDIAI",
+                "atualizado_em": "2015-06-18T15:33:55"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "29b41c2f-f837-46ff-b9a9-fedbb0855bac",
+        "id": "79065181003703",
+        "codigo": "79065181003703",
+        "qualificacao": "juridica",
+        "nome": "Distribuidora Curitiba de Papeis e Livros S/A",
+        "criado_em": null,
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "2ec2f6c4-8b72-4189-9644-307a9e636741",
+                "nome": "Distribuidora Curitiba de Papeis e Livros S/A",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "9efc9917-8927-434f-a782-b63e1a41e73a",
+                "tipo_logradouro": null,
+                "logradouro": "RUA ITACOLOMI, 292  Q 031 SETOR VER",
+                "numero": null,
+                "complemento": null,
+                "cep": "81070970",
+                "bairro": "PORTAO",
+                "tipo": "local",
+                "uf": "pr",
+                "ibge": "4106902",
+                "cidade": "CURITIBA",
+                "atualizado_em": "2016-07-18T17:01:50"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "3f1253d2-5cce-4899-8881-4f226966f18c",
+        "id": "40034348700",
+        "codigo": "79083",
+        "qualificacao": "fisica",
+        "nome": "ADENILDE BARROS FIGUEIREDO",
+        "criado_em": "2015-05-06",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": true,
+        "contatos": [
+            {
+                "id": "0ae7740e-abfd-4816-aea7-e7be79c955ec",
+                "nome": "ADENILDE BARROS",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": "BARROS",
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "78efac1e-9239-4972-8497-a13efcdf2bb5",
+                "nome": "ADENILDEBARROSFIGUEIREDOCRC-38979-RJ",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "e0e2816c-ec63-4fdb-bf4e-6e80672d579c",
+                "nome": "Contato Padrão",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": "Contato",
+                "sobre_nome": "Padrão",
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "11bd10cf-d7be-446b-bcc3-b325ccde9619",
+                "tipo_logradouro": "r",
+                "logradouro": "ROGERIO KARP",
+                "numero": "310",
+                "complemento": "COB. 302",
+                "cep": "22795216",
+                "bairro": "RECREIO DOS BANDEIRANTES",
+                "tipo": "cobranca",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "Rio de Janeiro",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "6458bba1-eead-412f-a141-aff24323042c",
+                "tipo_logradouro": "r",
+                "logradouro": "ROGERIO KARP",
+                "numero": "310",
+                "complemento": "COB. 302",
+                "cep": "22795216",
+                "bairro": "RECREIO DOS BANDEIRANTES",
+                "tipo": "entrega",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "Rio de Janeiro",
+                "atualizado_em": "2022-08-30T17:23:49"
+            },
+            {
+                "endereco": "eef212c3-003c-4381-b9e7-2db2e1440a41",
+                "tipo_logradouro": "r",
+                "logradouro": "ROGERIO KARP",
+                "numero": "310",
+                "complemento": "COB. 302",
+                "cep": "22795216",
+                "bairro": "RECREIO DOS BANDEIRANTES",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "Rio de Janeiro",
+                "atualizado_em": "2016-07-08T22:53:26"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "1324011c-b36a-4060-b6bc-4c48365e188b",
+        "id": "20926194000168",
+        "codigo": "79223",
+        "qualificacao": "juridica",
+        "nome": "4F ETIQUETAS LTDA",
+        "criado_em": "2015-05-07",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "ec77338f-38d0-4d3f-a91a-ba14ca9e7f74",
+                "nome": "4F  Etiquetas Ferreira",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "68575d36-eeb2-4982-8910-a417ec8fb764",
+                "nome": "Rogério",
+                "nascimento": "1899-12-30",
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "7f8118fe-b789-47a0-b0a2-d9e56ef575d8",
+                "tipo_logradouro": "r",
+                "logradouro": "EDUARDO PEREIRA",
+                "numero": "25",
+                "complemento": "",
+                "cep": "04312010",
+                "bairro": "VILA GUARANI",
+                "tipo": "cobranca",
+                "uf": "sp",
+                "ibge": "3550308",
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "8d85e574-59f4-45f5-8b07-32491f08b9d8",
+                "tipo_logradouro": null,
+                "logradouro": "RUA EDUARDO PEREIRA, 25",
+                "numero": null,
+                "complemento": null,
+                "cep": "04312010",
+                "bairro": "VILA GUARANI",
+                "tipo": "local",
+                "uf": "sp",
+                "ibge": "3550308",
+                "cidade": "SAO PAULO",
+                "atualizado_em": "2015-06-18T15:33:55"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "02ad6ada-22df-4d18-9436-9877cb2c5ca2",
+        "id": "17586530000166",
+        "codigo": "79245",
+        "qualificacao": "juridica",
+        "nome": "F & F REFRIGERACAO LTDA",
+        "criado_em": "2015-05-07",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "936680c3-4e28-4533-b159-dd8fb8542611",
+                "nome": "Andreia",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": "Sampaio",
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "f654ef41-ab3e-4a0f-b62f-270fc60bda0a",
+                "nome": "ANDRÉ PAULO",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "7ee257fe-41bf-4fa2-b028-e21d87401b45",
+                "nome": "Carla",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": "Santos",
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "8cc1cfdf-08a6-4ecb-ada5-ca7752cf1bbf",
+                "nome": "Contato Padrão",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": "Contato",
+                "sobre_nome": "Padrão",
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "d587b722-5e64-45b2-a977-1a73b46acae4",
+                "nome": "Douglas Lima",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "902c192d-71c4-47e1-a554-fe767478335e",
+                "nome": "Eduardo",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "89877613-3e0d-42ac-b33e-cb986111cae5",
+                "nome": "F & F REFRIGERACAO LTDA e F & F REFRIGERACAO LTDA",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "d17d4bb9-607b-4fb6-99df-968e1cd9041a",
+                "nome": "F & F REFRIGERACAO LTDA e F & F REFRIGERACAO LTDA",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "d4f4b0c6-637f-4ef3-a52d-a28cd401e7da",
+                "nome": "F & F REFRIGERACAO LTDA e F & F REFRIGERACAO LTDA",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "227cb51d-b4eb-4347-a8a7-9c3e2a642a73",
+                "nome": "Jacira",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "7e98d9c2-9a7c-4b8d-9d3e-1cc04bfe533e",
+                "nome": "MARCELO",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "806d3be5-f301-4860-989e-d87cf75dc301",
+                "nome": "Maria de Lourdes",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "627850a5-62cc-4db2-8604-5f0eea8644a6",
+                "nome": "Unica Ar Condicionado",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "c5ee004a-3e57-42d6-8cfa-f9d42d863abe",
+                "nome": "Washington Mendes",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "00e8adaf-f018-4ac6-9765-85f930709fb7",
+                "tipo_logradouro": "r",
+                "logradouro": "COMEND ALCIDES SIMAO HELOU , COLUNA A",
+                "numero": "525",
+                "complemento": "LOTE 12 SETOR II",
+                "cep": "29168090",
+                "bairro": "CIVIT II",
+                "tipo": "local",
+                "uf": "es",
+                "ibge": "3205002",
+                "cidade": "Serra",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "3b90c0f2-ad1d-42b9-85aa-e70a86d84a2d",
+                "tipo_logradouro": "r",
+                "logradouro": "COMEND ALCIDES SIMAO HELOU , COLUNA A",
+                "numero": "525",
+                "complemento": "LOTE 12 SETOR II",
+                "cep": "29168090",
+                "bairro": "CIVIT II",
+                "tipo": "cobranca",
+                "uf": "es",
+                "ibge": "3205002",
+                "cidade": "Serra",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "c9965514-f740-447d-a9be-0372ea62d172",
+                "tipo_logradouro": "r",
+                "logradouro": "COMEND ALCIDES SIMAO HELOU , COLUNA A",
+                "numero": "525",
+                "complemento": "LOTE 12 SETOR II",
+                "cep": "29168090",
+                "bairro": "CIVIT II",
+                "tipo": "entrega",
+                "uf": "es",
+                "ibge": "3205002",
+                "cidade": "Serra",
+                "atualizado_em": "2022-08-24T11:56:11"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "06115a0b-4142-4844-a627-a965518d55ca",
+        "id": "30350193000171",
+        "codigo": "79299",
+        "qualificacao": "juridica",
+        "nome": "ITAKRON ESTRUTURAS E SERVICOS EIRELI",
+        "criado_em": "2015-05-07",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "181408c9-262a-45d3-bada-64490eb5e0c6",
+                "nome": "Contato Padrão",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": "Contato",
+                "sobre_nome": "Padrão",
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "7edc5e2a-4fb2-4844-928e-f1207b9058bf",
+                "nome": "ITAKRON ESTRUTURAS E SERVIÇOS",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "4c216e68-a35d-434d-831b-0afed9696700",
+                "nome": "ITAKRON ESTRUTURAS E SERVIÇOS EIRELI ME",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "4e1d175b-a35e-4536-a335-b753eb47cc28",
+                "tipo_logradouro": null,
+                "logradouro": "R HERMES FONTES, 14",
+                "numero": null,
+                "complemento": null,
+                "cep": "20941050",
+                "bairro": "SAO CRISTOVAO",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "Rio de Janeiro",
+                "atualizado_em": "2016-07-08T22:36:20"
+            },
+            {
+                "endereco": "b0ab88ea-e544-4c87-97ad-c9754d599146",
+                "tipo_logradouro": null,
+                "logradouro": null,
+                "numero": null,
+                "complemento": null,
+                "cep": null,
+                "bairro": "SÃO CRISTOVAO",
+                "tipo": "cobranca",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": null,
+                "atualizado_em": "2016-07-08T22:36:20"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "06115a0b-4142-4844-a627-a965518d55ca",
+        "id": "30350193000171",
+        "codigo": "79299",
+        "qualificacao": "juridica",
+        "nome": "ITAKRON ESTRUTURAS E SERVICOS EIRELI",
+        "criado_em": "2015-05-07",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "181408c9-262a-45d3-bada-64490eb5e0c6",
+                "nome": "Contato Padrão",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": "Contato",
+                "sobre_nome": "Padrão",
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "7edc5e2a-4fb2-4844-928e-f1207b9058bf",
+                "nome": "ITAKRON ESTRUTURAS E SERVIÇOS",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "4c216e68-a35d-434d-831b-0afed9696700",
+                "nome": "ITAKRON ESTRUTURAS E SERVIÇOS EIRELI ME",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "4e1d175b-a35e-4536-a335-b753eb47cc28",
+                "tipo_logradouro": null,
+                "logradouro": "R HERMES FONTES, 14",
+                "numero": null,
+                "complemento": null,
+                "cep": "20941050",
+                "bairro": "SAO CRISTOVAO",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "Rio de Janeiro",
+                "atualizado_em": "2016-07-08T22:36:20"
+            },
+            {
+                "endereco": "b0ab88ea-e544-4c87-97ad-c9754d599146",
+                "tipo_logradouro": null,
+                "logradouro": null,
+                "numero": null,
+                "complemento": null,
+                "cep": null,
+                "bairro": "SÃO CRISTOVAO",
+                "tipo": "cobranca",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": null,
+                "atualizado_em": "2016-07-08T22:36:20"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "0c7bd0f3-e68a-46d7-8945-bde86ab7b899",
+        "id": "07207195000194",
+        "codigo": "79429",
+        "qualificacao": "juridica",
+        "nome": "BARRACA DA CHIQUITA RESTAURANTE LTDA",
+        "criado_em": "2015-05-12",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "3732c639-fc55-4634-a7be-cd20f1a70c91",
+                "nome": "BARRACA DA CHIQUITA RESTAURANTE LTDA",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "054259eb-655c-4493-b661-1617951027da",
+                "tipo_logradouro": "",
+                "logradouro": "",
+                "numero": "",
+                "complemento": "",
+                "cep": "",
+                "bairro": "",
+                "tipo": "local",
+                "uf": "",
+                "ibge": null,
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:48:04"
+            },
+            {
+                "endereco": "9b40c486-2837-416c-ab68-bce9e207384e",
+                "tipo_logradouro": "",
+                "logradouro": "",
+                "numero": "",
+                "complemento": "",
+                "cep": "",
+                "bairro": "",
+                "tipo": "cobranca",
+                "uf": "",
+                "ibge": null,
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:48:04"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "bf16db7b-e56e-45b1-957f-a74ec2ac90eb",
+        "id": "10994393000150",
+        "codigo": "79457",
+        "qualificacao": "juridica",
+        "nome": "Tools Brasil Representação Comercial Ltda",
+        "criado_em": "2015-05-12",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "0cb1b960-8865-4e5d-b1ee-07f9dc6385fe",
+                "nome": "Thomas Case Consultoria",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "b95e2bb8-de90-4e50-9998-62d22d907925",
+                "tipo_logradouro": "",
+                "logradouro": "",
+                "numero": "",
+                "complemento": "",
+                "cep": "",
+                "bairro": "",
+                "tipo": "cobranca",
+                "uf": "",
+                "ibge": null,
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "9ea7f337-aaa4-49f0-91cf-64b63ec2e9d2",
+                "tipo_logradouro": null,
+                "logradouro": "Av. Rio Branco, 45  sala 913",
+                "numero": null,
+                "complemento": null,
+                "cep": "20090003",
+                "bairro": "Centro",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "Rio de Janeiro",
+                "atualizado_em": "2015-06-18T15:33:55"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "7eaca9d8-da01-4db6-a59d-33a516347d0d",
+        "id": "01109184000195",
+        "codigo": "79459",
+        "qualificacao": "juridica",
+        "nome": "UNIVERSO ONLINE S/A",
+        "criado_em": "2015-05-12",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "19b7e317-11bd-4e9e-99dc-0e9b1eccc2e4",
+                "nome": "Pagseguro",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "086f1225-25eb-405d-b09c-8484fe023d37",
+                "tipo_logradouro": "",
+                "logradouro": "",
+                "numero": "",
+                "complemento": "",
+                "cep": "",
+                "bairro": "",
+                "tipo": "cobranca",
+                "uf": "",
+                "ibge": null,
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:48:04"
+            },
+            {
+                "endereco": "fd78b294-ebb5-4dfa-a332-92b522d09be5",
+                "tipo_logradouro": "",
+                "logradouro": "",
+                "numero": "",
+                "complemento": "",
+                "cep": "",
+                "bairro": "",
+                "tipo": "local",
+                "uf": "",
+                "ibge": null,
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:48:04"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "03ffbf0b-eab8-4040-9bb4-171b77b1f1da",
+        "id": "42473785000160",
+        "codigo": "79507",
+        "qualificacao": "juridica",
+        "nome": "AUTO POSTO MERCURIO DA PAVUNA LTDA",
+        "criado_em": "2015-05-13",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "da119533-f2a8-4bec-ad05-f93b73db50b0",
+                "nome": "AUTO POSTO MERCURIO DA PAVUNA LTDA",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "04e2291e-a0b6-4c51-9c6e-e5f982d4d0e1",
+                "tipo_logradouro": "",
+                "logradouro": "",
+                "numero": "",
+                "complemento": "",
+                "cep": "",
+                "bairro": "",
+                "tipo": "local",
+                "uf": "",
+                "ibge": null,
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:48:04"
+            },
+            {
+                "endereco": "79e5fac8-d4d2-47a4-b966-88ea3fec35c2",
+                "tipo_logradouro": "",
+                "logradouro": "",
+                "numero": "",
+                "complemento": "",
+                "cep": "",
+                "bairro": "",
+                "tipo": "cobranca",
+                "uf": "",
+                "ibge": null,
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:48:04"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "34c0d7c3-5569-46d5-a186-b42be07b360f",
+        "id": "07315326000157",
+        "codigo": "79711",
+        "qualificacao": "juridica",
+        "nome": "DING SHOW EMBALAGENS PLASTICAS LTDA",
+        "criado_em": "2015-05-15",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "1b4d3fc4-05cb-4c18-af29-eb171c579f1c",
+                "nome": "DING SHOW EMBALAGENS PLASTICAS LTDA",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "91cd8b4c-b65a-4f42-9ac7-f99d4c64c24f",
+                "tipo_logradouro": "r",
+                "logradouro": "Buenos Aires",
+                "numero": "173",
+                "complemento": null,
+                "cep": "20070021",
+                "bairro": null,
+                "tipo": "local",
+                "uf": null,
+                "ibge": null,
+                "cidade": null,
+                "atualizado_em": "2016-07-08T22:48:04"
+            },
+            {
+                "endereco": "3241bc75-6b91-40f4-bc48-5cbf2146ac88",
+                "tipo_logradouro": null,
+                "logradouro": null,
+                "numero": null,
+                "complemento": null,
+                "cep": null,
+                "bairro": null,
+                "tipo": "cobranca",
+                "uf": null,
+                "ibge": null,
+                "cidade": null,
+                "atualizado_em": "2016-07-08T22:48:04"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "04e43d38-43fe-4fcf-915a-1ebffea15832",
+        "id": "07350170000145",
+        "codigo": "79817",
+        "qualificacao": "juridica",
+        "nome": "GUY DURIAU BISTRO RESTAURANTE LTDA",
+        "criado_em": "2015-05-18",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "85d950e8-2b96-4436-b17b-32083c4bb461",
+                "nome": "GUY DURIAU BISTRO RESTAURANTE LTDA",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "01aef4e5-d413-4b12-aaf8-bf2020512e09",
+                "tipo_logradouro": "",
+                "logradouro": "",
+                "numero": "",
+                "complemento": "",
+                "cep": "",
+                "bairro": "",
+                "tipo": "cobranca",
+                "uf": "",
+                "ibge": null,
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:48:04"
+            },
+            {
+                "endereco": "26eee48c-2e50-457b-8cf7-21f8159c0f41",
+                "tipo_logradouro": "",
+                "logradouro": "",
+                "numero": "",
+                "complemento": "",
+                "cep": "",
+                "bairro": "",
+                "tipo": "local",
+                "uf": "",
+                "ibge": null,
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:48:04"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "5d175458-eb27-4697-aaa7-e1b3ea6771f8",
+        "id": "04606341000166",
+        "codigo": "79935",
+        "qualificacao": "juridica",
+        "nome": "L & A DIGITAL GRAFIC LTDA",
+        "criado_em": "2015-05-20",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "90ff6c09-ee25-4e4c-9ffe-6833790ee26e",
+                "nome": "La Digital",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "c94fcb89-2872-4273-bb6d-3e165ec97488",
+                "tipo_logradouro": "",
+                "logradouro": "",
+                "numero": "",
+                "complemento": "",
+                "cep": "",
+                "bairro": "",
+                "tipo": "cobranca",
+                "uf": "",
+                "ibge": null,
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:53:26"
+            },
+            {
+                "endereco": "924e6113-2c18-494f-8c93-042f084be805",
+                "tipo_logradouro": null,
+                "logradouro": "AVN FERNANDO MATTOS 270, LOJ B,270 LOJ B",
+                "numero": null,
+                "complemento": null,
+                "cep": "22621090",
+                "bairro": "BARRA DA TIJUCA",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "Rio de Janeiro",
+                "atualizado_em": "2015-06-18T15:33:55"
+            }
+        ],
+        "contas_fornecedores": []
+    },
+    {
+        "pk": "ce7fd1bf-9ccc-499c-b1ee-aa5dab1d7572",
+        "id": "07130749000100",
+        "codigo": "80050",
+        "qualificacao": "juridica",
+        "nome": "INSTITUTO DE RECURSOS HUMANOS DO LESTE FLUMINENSE",
+        "criado_em": "2015-05-21",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "bf909f02-cde4-4454-b48f-ff545db2c434",
+                "nome": "INSTITUTO DE RECURSOS HUMANOS DO LESTE FLUMINENSE",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "aed065ab-b0ff-48cc-b3d3-0047dc036584",
+                "tipo_logradouro": null,
+                "logradouro": "Avenida Ernani do Amaral Peixoto, 178 sala 402",
+                "numero": null,
+                "complemento": null,
+                "cep": "24020075",
+                "bairro": "Centro",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3303302",
+                "cidade": "Niterói",
+                "atualizado_em": "2015-06-18T15:33:55"
+            },
+            {
+                "endereco": "45b14878-b6d1-451b-a90b-a82ffa0f7dad",
+                "tipo_logradouro": "av",
+                "logradouro": "Ernani do Amaral Peixoto",
+                "numero": "178",
+                "complemento": "",
+                "cep": "",
+                "bairro": "centro",
+                "tipo": "cobranca",
+                "uf": "rj",
+                "ibge": null,
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:53:26"
+            }
+        ],
+        "contas_fornecedores": []
+    }
+]

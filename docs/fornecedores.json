@@ -1,0 +1,201 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "0.0.1",
+        "title": "Manutenção de Fornecedores.",
+        "description": "Gerencia todas as atividades relacionadas com a manutenção de Fornecedores no ERP Desktop."
+    },
+    "servers": [
+        {
+            "url": "https://api.nasajon.app/dados-mestre"
+        }
+    ],
+    "components": {
+        "securitySchemes": {
+            "OAuth2": {
+                "type": "oauth2",
+                "flows": {
+                    "password": {
+                        "tokenUrl": "https://auth.nasajon.com.br/auth/realms/master/protocol/openid-connect/token",
+                        "scopes": {
+                            "offline_access": "Token para acesso offline"
+                        }
+                    }
+                }
+            }
+        },
+        "schemas": {
+            "bulk_request":{
+                "type": "object",
+                "properties": {
+                    "url" : {
+                        "description": "URl com o arquivo usado na importação",
+                        "type" : "string",
+                        "example": "https://armazemento.com/meuarquivo"
+                    }
+                }
+            },
+            "bulk_response": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "example": "00000000-0000-0000-0000-000000000000",
+                        "description": "ID do processo para acompanhamento"
+                    },
+                    "status_url": {
+                        "type": "string",
+                        "example":"/erp3/2531/fornecedores/_bulk/status/00000000-0000-0000-0000-000000000000"
+                    }
+                }
+            },
+            "bulk_status":{
+                "type": "object",
+                "properties": {
+                    "id" : {
+                        "type" : "string",
+                        "example": "00000000-0000-0000-0000-000000000000"
+                    },
+                    "status" : {
+                        "type" : "string",
+                        "example": "processing"
+                    },
+                    "message" : {
+                        "type" : "string",
+                        "example": "ocorreram erros durante o processo de importação."
+                    },
+                    "successes" : {
+                        "type" : "integer",
+                        "example": "550"
+                    },
+                    "failures" : {
+                        "type" : "integer",
+                        "example": "50"
+                    },
+                    "total" : {
+                        "type" : "integer",
+                        "example": "1000"
+                    }
+                }
+            }
+        }
+    },
+    "security": [
+        {
+            "OAuth2": [
+                "offline_access"
+            ]
+        }
+    ],
+    "paths": {
+        "/erp3/2531/fornecedores/_bulk": {
+            "put": {
+                "tags": [
+                    "Ingestão de dados em massa."
+                ],
+                "description": "API para carga de dados em Bulk.",
+                "requestBody": {
+                    "description": "Corpo da requisição, contendo a url do arquivo importação.",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/bulk_request"
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "description": "Token gerado pelo OAuth 2",
+                        "in": "header",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/bulk_response"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Requisição inválida. Causas prováveis: a) faltando propriedades obrigatórias; b) erro de formatação do json de entrada; c) formato incorreto em alguma das propriedades;"
+                    },
+                    "401": {
+                        "description": "Proibido acesso. Causa provável: falha na autenticação."
+                    },
+                    "403": {
+                        "description": "Proibida ação. Causa provável: falha na autorização."
+                    },
+                    "404": {
+                        "description": "Não encontrado. Causa provável: identificador não existente no grupo_empresarial/tenant."
+                    },
+                    "500": {
+                        "description": "Erro interno do servidor. Ver detalhes no corpo da resposta."
+                    }
+                }
+            }
+        },
+        "/erp3/2531/fornecedores/_bulk/status/{id}": {
+            "get": {
+                "tags": [
+                    "GET Status Bulk"
+                ],
+                "description": "API para recuperação de status de Bulk.",
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "description": "Token gerado pelo OAuth 2",
+                        "in": "header",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "id",
+                        "description": "Id da operação recebida pela api de Bulk.",
+                        "required": true,
+                        "in": "path",
+                        "schema": {
+                            "type": "string",
+                            "example": "00000000-0000-0000-0000-000000000000"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/bulk_status"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Proibido acesso. Causa provável: falha na autenticação."
+                    },
+                    "403": {
+                        "description": "Proibida ação. Causa provável: falha na autorização."
+                    },
+                    "404": {
+                        "description": "Não encontrado. Causa provável: identificador não existente."
+                    },
+                    "500": {
+                        "description": "Erro interno do servidor. Ver detalhes no corpo da resposta."
+                    }
+                }
+            }
+        }
+    }
+}

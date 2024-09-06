@@ -1,0 +1,135 @@
+[
+    {
+        "pk": "ff655f7c-d2f8-4cbb-806c-b04e32046ff6",
+        "id": "27150648000109",
+        "codigo": "73189",
+        "qualificacao": "juridica",
+        "nome": "15 OFICIO DE NOTAS DA COMARCA DA CAPITAL DO ESTADO DO RIO DE JANEIRO",
+        "criado_em": "2013-05-14",
+        "atualizado_em": "2023-01-12T12:18:37",
+        "fornecedor": true,
+        "vendedor": false,
+        "inativo": false,
+        "contatos": [
+            {
+                "id": "af5b7368-a3f0-4ff3-91ea-e10a32c8b556",
+                "nome": "ADRIANA OLIVEIRA",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "89642928-8e0c-4b22-a66b-b64654706c35",
+                "nome": "CARTORIO FERNANDA DE FREITAS LEITAO",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "dc383592-bdfa-4d36-94a2-c1cfa3c5af8a",
+                "nome": "MARCELO MACIEL",
+                "nascimento": null,
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "8a031792-e631-44ee-b51a-1081e3168a78",
+                "nome": "RENALDO BUSSIERE",
+                "nascimento": "1899-12-30",
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "afd9b6a6-1ac1-41c3-9198-7832619eabbb",
+                "nome": "RENATO",
+                "nascimento": "1899-12-30",
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            },
+            {
+                "id": "cb507ee9-8878-4b71-8b44-e5a90e73064f",
+                "nome": "TATIANA MOREIRA",
+                "nascimento": "1899-12-30",
+                "sexo": null,
+                "primeiro_nome": null,
+                "sobre_nome": null,
+                "cpf": null,
+                "atualizado_em": "2022-08-23T18:55:15"
+            }
+        ],
+        "enderecos": [
+            {
+                "endereco": "536c2b3b-8a8a-492e-8e10-950b4ce357ba",
+                "tipo_logradouro": "r",
+                "logradouro": "do OUVIDOR",
+                "numero": "89",
+                "complemento": "2º ANDAR",
+                "cep": "20040030",
+                "bairro": "CENTRO",
+                "tipo": "local",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:48:04"
+            },
+            {
+                "endereco": "7d71072d-a54c-4009-8a1b-4da4b5c67468",
+                "tipo_logradouro": "r",
+                "logradouro": "do OUVIDOR",
+                "numero": "89",
+                "complemento": "2º ANDAR",
+                "cep": "20040030",
+                "bairro": "CENTRO",
+                "tipo": "cobranca",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": "",
+                "atualizado_em": "2016-07-08T22:48:04"
+            },
+            {
+                "endereco": "00347057-fca8-49bb-90e6-ccdf82321e49",
+                "tipo_logradouro": "r",
+                "logradouro": "DO OUVIDOR",
+                "numero": "89",
+                "complemento": "3 ANDAR",
+                "cep": "20040030",
+                "bairro": "CENTRO",
+                "tipo": "entrega",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": null,
+                "atualizado_em": "2016-07-08T22:48:04"
+            },
+            {
+                "endereco": "5eab761a-8f97-4762-93e0-d0c490469985",
+                "tipo_logradouro": "r",
+                "logradouro": "DO OUVIDOR",
+                "numero": "89",
+                "complemento": "3 ANDAR",
+                "cep": "20040030",
+                "bairro": "CENTRO",
+                "tipo": "entrega",
+                "uf": "rj",
+                "ibge": "3304557",
+                "cidade": null,
+                "atualizado_em": "2016-07-08T22:48:04"
+            }
+        ],
+        "contas_fornecedores": []
+    }
+]
