@@ -72,6 +72,39 @@
                         "type" : "integer",
                         "example": "50"
                     },
+                    "pending" : {
+                        "type" : "integer",
+                        "example": "400"
+                    },
+                    "total" : {
+                        "type" : "integer",
+                        "example": "1000"
+                    }
+                }
+            },
+            "bulk_status_details":{
+                "type": "object",
+                "properties": {
+                    "id" : {
+                        "type" : "string",
+                        "example": "00000000-0000-0000-0000-000000000000"
+                    },
+                    "status" : {
+                        "type" : "string",
+                        "example": "processing"
+                    },
+                    "message" : {
+                        "type" : "string",
+                        "example": "ocorreram erros durante o processo de importação."
+                    },
+                    "successes" : {
+                        "type" : "integer",
+                        "example": "550"
+                    },
+                    "failures" : {
+                        "type" : "integer",
+                        "example": "50"
+                    },
                     "total" : {
                         "type" : "integer",
                         "example": "1000"
@@ -178,6 +211,61 @@
                             "application/json": {
                                 "schema": {
                                     "$ref": "#/components/schemas/bulk_status"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Proibido acesso. Causa provável: falha na autenticação."
+                    },
+                    "403": {
+                        "description": "Proibida ação. Causa provável: falha na autorização."
+                    },
+                    "404": {
+                        "description": "Não encontrado. Causa provável: identificador não existente."
+                    },
+                    "500": {
+                        "description": "Erro interno do servidor. Ver detalhes no corpo da resposta."
+                    }
+                }
+            }
+        },
+        "/erp3/2531/fornecedores/_bulk/status/{id}/failures": {
+            "get": {
+                "tags": [
+                    "GET failures of status Bulk"
+                ],
+                "description": "API para recuperação de dados falhados durante a importação. Retorna um dataset com as falhas.",
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "description": "Token gerado pelo OAuth 2",
+                        "in": "header",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "id",
+                        "description": "Id da operação recebida pela api de Bulk.",
+                        "required": true,
+                        "in": "path",
+                        "schema": {
+                            "type": "string",
+                            "example": "00000000-0000-0000-0000-000000000000"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Sucesso",
+                        "content": {
+                            "application/octet-stream": {
+                                "schema": {
+                                    "type": "string",
+                                    "format": "binary",
+                                    "example": "Retorna um dataset com os dados com erro de importação."
                                 }
                             }
                         }

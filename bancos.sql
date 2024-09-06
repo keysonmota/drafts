@@ -1,6 +1,6 @@
 create table stage_area(
     id uuid default uuid_generate_v4() primary key,
-    batch uuid default uuid generate_v4(),
+    batch uuid default uuid_generate_v4(),
     created_time timestamp default current_timestamp,
     updated_time timestamp default current_timestamp,
     schema_name text not null,

@@ -94,7 +94,9 @@ As apis de Bulk seguem o padrão:
 
 >  **PUT** figura/_bulk ->  Para registro do arquivo de importação.
 
->  **GET** figura/_bulk/status/{id} ->Para consulta do andamento do processo.
+>  **GET** figura/_bulk/status/{id} -> Para consulta do andamento do processo.
+
+>  **GET** figura/_bulk/status/{id}/failures -> Para consulta do e dados falhados durante a importação.
 
 <a href="fornecedores_bulk_api.md" target="_blank">Documentação apis</a>
 

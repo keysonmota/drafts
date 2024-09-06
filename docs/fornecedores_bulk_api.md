@@ -117,6 +117,7 @@ API para recuperação de status de Bulk.
   "message": "ocorreram erros durante o processo de importação.",
   "successes": "550",
   "failures": "50",
+  "pending": "400",
   "total": "1000"
 }
 ```
@@ -126,6 +127,40 @@ API para recuperação de status de Bulk.
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Sucesso|[bulk_status](#schemabulk_status)|
+|401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|Proibido acesso. Causa provável: falha na autenticação.|None|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|Proibida ação. Causa provável: falha na autorização.|None|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Não encontrado. Causa provável: identificador não existente.|None|
+|500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Erro interno do servidor. Ver detalhes no corpo da resposta.|None|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+OAuth2 ( Scopes: offline_access )
+</aside>
+
+<h1 id="manuten-o-de-fornecedores--get-failures-of-status-bulk">GET failures of status Bulk</h1>
+
+## get__erp3_2531_fornecedores__bulk_status_{id}_failures
+
+`GET /erp3/2531/fornecedores/_bulk/status/{id}/failures`
+
+API para recuperação de dados falhados durante a importação. Retorna um dataset com as falhas.
+
+<h3 id="get__erp3_2531_fornecedores__bulk_status_{id}_failures-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|Authorization|header|string|true|Token gerado pelo OAuth 2|
+|id|path|string|true|Id da operação recebida pela api de Bulk.|
+
+> Example responses
+
+> 200 Response
+
+<h3 id="get__erp3_2531_fornecedores__bulk_status_{id}_failures-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Sucesso|string|
 |401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|Proibido acesso. Causa provável: falha na autenticação.|None|
 |403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|Proibida ação. Causa provável: falha na autorização.|None|
 |404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Não encontrado. Causa provável: identificador não existente.|None|
@@ -186,6 +221,38 @@ OAuth2 ( Scopes: offline_access )
 <a id="schema_bulk_status"></a>
 <a id="tocSbulk_status"></a>
 <a id="tocsbulk_status"></a>
+
+```json
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "status": "processing",
+  "message": "ocorreram erros durante o processo de importação.",
+  "successes": "550",
+  "failures": "50",
+  "pending": "400",
+  "total": "1000"
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|id|string|false|none|none|
+|status|string|false|none|none|
+|message|string|false|none|none|
+|successes|integer|false|none|none|
+|failures|integer|false|none|none|
+|pending|integer|false|none|none|
+|total|integer|false|none|none|
+
+<h2 id="tocS_bulk_status_details">bulk_status_details</h2>
+<!-- backwards compatibility -->
+<a id="schemabulk_status_details"></a>
+<a id="schema_bulk_status_details"></a>
+<a id="tocSbulk_status_details"></a>
+<a id="tocsbulk_status_details"></a>
 
 ```json
 {
