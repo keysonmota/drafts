@@ -1,279 +1,305 @@
----
-title: Manutenção de Fornecedores. v0.0.1
-language_tabs:
-  - shell: Shell
-  - http: HTTP
-  - javascript: JavaScript
-  - ruby: Ruby
-  - python: Python
-  - php: PHP
-  - java: Java
-  - go: Go
-toc_footers: []
-includes: []
-search: true
-highlight_theme: darkula
-headingLevel: 2
+# Manutenção de Fornecedores.
 
----
-
-<!-- Generator: Widdershins v4.0.1 -->
-
-<h1 id="manuten-o-de-fornecedores-">Manutenção de Fornecedores. v0.0.1</h1>
-
-> Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.
+> Version 0.0.1
 
 Gerencia todas as atividades relacionadas com a manutenção de Fornecedores no ERP Desktop.
 
-Base URLs:
+## Path Table
 
-* <a href="https://api.nasajon.app/dados-mestre">https://api.nasajon.app/dados-mestre</a>
+| Method | Path | Description |
+| --- | --- | --- |
+| POST | [/erp3/2531/fornecedores/_bulk](#posterp32531fornecedores_bulk) | API para gerar url de upload do dados. |
+| PUT | [/erp3/2531/fornecedores/_bulk](#puterp32531fornecedores_bulk) | API para carga de dados em Bulk. |
+| GET | [/erp3/2531/fornecedores/_bulk/status/{id}](#geterp32531fornecedores_bulkstatusid) | API para recuperação de status de Bulk. |
+| GET | [/erp3/2531/fornecedores/_bulk/status/{id}/failures](#geterp32531fornecedores_bulkstatusidfailures) | API para recuperação de dados falhados durante a importação. Retorna um dataset com as falhas. |
 
-# Authentication
+## Reference Table
 
-- oAuth2 authentication. 
+| Name | Path | Description |
+| --- | --- | --- |
+| OAuth2 | [#/components/securitySchemes/OAuth2](#componentssecurityschemesoauth2) |  |
+| bulk_url_request | [#/components/schemas/bulk_url_request](#componentsschemasbulk_url_request) | Corpo da requisição de solicitação de url. |
+| bulk_url_response | [#/components/schemas/bulk_url_response](#componentsschemasbulk_url_response) | Resposta da requisição de solicitação de url. |
+| bulk_request | [#/components/schemas/bulk_request](#componentsschemasbulk_request) | Corpo da requisição de envio de arquivo para carregamento. |
+| bulk_response | [#/components/schemas/bulk_response](#componentsschemasbulk_response) | Resposta da requisição de envio de arquivo para carregamento. |
+| bulk_status | [#/components/schemas/bulk_status](#componentsschemasbulk_status) | Resposta da requisição de constad de status do processo de carga. |
 
-    - Flow: password
+## Path Details
 
-    - Token URL = [https://auth.nasajon.com.br/auth/realms/master/protocol/openid-connect/token](https://auth.nasajon.com.br/auth/realms/master/protocol/openid-connect/token)
+***
 
-|Scope|Scope Description|
-|---|---|
-|offline_access|Token para acesso offline|
+### [POST]/erp3/2531/fornecedores/_bulk
 
-<h1 id="manuten-o-de-fornecedores--ingest-o-de-dados-em-massa-">Ingestão de dados em massa.</h1>
+- Summary  
+API para gerar url de upload do dados.
 
-## put__erp3_2531_fornecedores__bulk
+#### Headers
 
-`PUT /erp3/2531/fornecedores/_bulk`
+```ts
+Authorization: string
+```
 
+#### RequestBody
+
+- application/json
+
+```ts
+// Corpo da requisição de solicitação de url.
+{
+  // Identificador do tenant ao qual o registro pertence.
+  tenant: integer
+  // Identificador do grupo empresarial ao qual o registro pertence.
+  grupo_empresarial_id: string
+  // Nome do arquivo que será carregado.
+  file: string
+}
+```
+
+#### Responses
+
+- 200 Sucesso
+
+`application/json`
+
+```ts
+// Resposta da requisição de solicitação de url.
+{
+  // ID do processo para acompanhamento.
+  upload_url?: string
+}
+```
+
+- 400 Requisição inválida. Causas prováveis: a) faltando propriedades obrigatórias; b) erro de formatação do json de entrada; c) formato incorreto em alguma das propriedades;
+
+- 401 Proibido acesso. Causa provável: falha na autenticação.
+
+- 403 Proibida ação. Causa provável: falha na autorização.
+
+- 404 Não encontrado. Causa provável: identificador não existente no grupo_empresarial/tenant.
+
+- 500 Erro interno do servidor. Ver detalhes no corpo da resposta.
+
+***
+
+### [PUT]/erp3/2531/fornecedores/_bulk
+
+- Summary  
 API para carga de dados em Bulk.
 
-> Body parameter
+#### Headers
 
-```json
+```ts
+Authorization: string
+```
+
+#### RequestBody
+
+- application/json
+
+```ts
+// Corpo da requisição de envio de arquivo para carregamento.
 {
-  "url": "https://armazemento.com/meuarquivo"
+  // Identificador do tenant ao qual o registro pertence.
+  tenant: integer
+  // Identificador do grupo empresarial ao qual o registro pertence.
+  grupo_empresarial_id: string
+  // URl com o arquivo usado na importação.
+  url: string
 }
 ```
 
-<h3 id="put__erp3_2531_fornecedores__bulk-parameters">Parameters</h3>
+#### Responses
 
-|Name|In|Type|Required|Description|
-|---|---|---|---|---|
-|Authorization|header|string|true|Token gerado pelo OAuth 2|
-|body|body|[bulk_request](#schemabulk_request)|false|Corpo da requisição, contendo a url do arquivo importação.|
+- 200 Sucesso
 
-> Example responses
+`application/json`
 
-> 200 Response
-
-```json
+```ts
+// Resposta da requisição de envio de arquivo para carregamento.
 {
-  "id": "00000000-0000-0000-0000-000000000000",
-  "status_url": "/erp3/2531/fornecedores/_bulk/status/00000000-0000-0000-0000-000000000000"
+  // ID do processo para acompanhamento.
+  id?: string
+  status_url?: string
 }
 ```
 
-<h3 id="put__erp3_2531_fornecedores__bulk-responses">Responses</h3>
+- 400 Requisição inválida. Causas prováveis: a) faltando propriedades obrigatórias; b) erro de formatação do json de entrada; c) formato incorreto em alguma das propriedades;
 
-|Status|Meaning|Description|Schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Sucesso|[bulk_response](#schemabulk_response)|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Requisição inválida. Causas prováveis: a) faltando propriedades obrigatórias; b) erro de formatação do json de entrada; c) formato incorreto em alguma das propriedades;|None|
-|401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|Proibido acesso. Causa provável: falha na autenticação.|None|
-|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|Proibida ação. Causa provável: falha na autorização.|None|
-|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Não encontrado. Causa provável: identificador não existente no grupo_empresarial/tenant.|None|
-|500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Erro interno do servidor. Ver detalhes no corpo da resposta.|None|
+- 401 Proibido acesso. Causa provável: falha na autenticação.
 
-<aside class="warning">
-To perform this operation, you must be authenticated by means of one of the following methods:
-OAuth2 ( Scopes: offline_access )
-</aside>
+- 403 Proibida ação. Causa provável: falha na autorização.
 
-<h1 id="manuten-o-de-fornecedores--get-status-bulk">GET Status Bulk</h1>
+- 404 Não encontrado. Causa provável: identificador não existente no grupo_empresarial/tenant.
 
-## get__erp3_2531_fornecedores__bulk_status_{id}
+- 500 Erro interno do servidor. Ver detalhes no corpo da resposta.
 
-`GET /erp3/2531/fornecedores/_bulk/status/{id}`
+***
 
+### [GET]/erp3/2531/fornecedores/_bulk/status/{id}
+
+- Summary  
 API para recuperação de status de Bulk.
 
-<h3 id="get__erp3_2531_fornecedores__bulk_status_{id}-parameters">Parameters</h3>
+#### Headers
 
-|Name|In|Type|Required|Description|
-|---|---|---|---|---|
-|Authorization|header|string|true|Token gerado pelo OAuth 2|
-|id|path|string|true|Id da operação recebida pela api de Bulk.|
+```ts
+Authorization: string
+```
 
-> Example responses
+#### Responses
 
-> 200 Response
+- 200 Sucesso
 
-```json
+`application/json`
+
+```ts
+// Resposta da requisição de constad de status do processo de carga.
 {
-  "id": "00000000-0000-0000-0000-000000000000",
-  "status": "processing",
-  "message": "ocorreram erros durante o processo de importação.",
-  "successes": "550",
-  "failures": "50",
-  "pending": "400",
-  "total": "1000"
+  // ID do processo para acompanhamento.
+  id?: string
+  // Status do processamento.
+  status?: string
+  // Mensagens adicionais relacionadas ao processo.
+  message?: string
+  // Número de registros processados com sucesso.
+  successes?: integer
+  // Número de registros com falha de processamento.
+  failures?: integer
+  // Número de registros ainda não processados.
+  pending?: integer
+  // Número de registros da solicitação.
+  total?: integer
 }
 ```
 
-<h3 id="get__erp3_2531_fornecedores__bulk_status_{id}-responses">Responses</h3>
+- 401 Proibido acesso. Causa provável: falha na autenticação.
 
-|Status|Meaning|Description|Schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Sucesso|[bulk_status](#schemabulk_status)|
-|401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|Proibido acesso. Causa provável: falha na autenticação.|None|
-|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|Proibida ação. Causa provável: falha na autorização.|None|
-|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Não encontrado. Causa provável: identificador não existente.|None|
-|500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Erro interno do servidor. Ver detalhes no corpo da resposta.|None|
+- 403 Proibida ação. Causa provável: falha na autorização.
 
-<aside class="warning">
-To perform this operation, you must be authenticated by means of one of the following methods:
-OAuth2 ( Scopes: offline_access )
-</aside>
+- 404 Não encontrado. Causa provável: identificador não existente.
 
-<h1 id="manuten-o-de-fornecedores--get-failures-of-status-bulk">GET failures of status Bulk</h1>
+- 500 Erro interno do servidor. Ver detalhes no corpo da resposta.
 
-## get__erp3_2531_fornecedores__bulk_status_{id}_failures
+***
 
-`GET /erp3/2531/fornecedores/_bulk/status/{id}/failures`
+### [GET]/erp3/2531/fornecedores/_bulk/status/{id}/failures
 
+- Summary  
 API para recuperação de dados falhados durante a importação. Retorna um dataset com as falhas.
 
-<h3 id="get__erp3_2531_fornecedores__bulk_status_{id}_failures-parameters">Parameters</h3>
+#### Headers
 
-|Name|In|Type|Required|Description|
-|---|---|---|---|---|
-|Authorization|header|string|true|Token gerado pelo OAuth 2|
-|id|path|string|true|Id da operação recebida pela api de Bulk.|
-
-> Example responses
-
-> 200 Response
-
-<h3 id="get__erp3_2531_fornecedores__bulk_status_{id}_failures-responses">Responses</h3>
-
-|Status|Meaning|Description|Schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Sucesso|string|
-|401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|Proibido acesso. Causa provável: falha na autenticação.|None|
-|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|Proibida ação. Causa provável: falha na autorização.|None|
-|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Não encontrado. Causa provável: identificador não existente.|None|
-|500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Erro interno do servidor. Ver detalhes no corpo da resposta.|None|
-
-<aside class="warning">
-To perform this operation, you must be authenticated by means of one of the following methods:
-OAuth2 ( Scopes: offline_access )
-</aside>
-
-# Schemas
-
-<h2 id="tocS_bulk_request">bulk_request</h2>
-<!-- backwards compatibility -->
-<a id="schemabulk_request"></a>
-<a id="schema_bulk_request"></a>
-<a id="tocSbulk_request"></a>
-<a id="tocsbulk_request"></a>
-
-```json
-{
-  "url": "https://armazemento.com/meuarquivo"
-}
-
+```ts
+Authorization: string
 ```
 
-### Properties
+#### Responses
 
-|Name|Type|Required|Restrictions|Description|
-|---|---|---|---|---|
-|url|string|false|none|URl com o arquivo usado na importação|
+- 200 Sucesso
 
-<h2 id="tocS_bulk_response">bulk_response</h2>
-<!-- backwards compatibility -->
-<a id="schemabulk_response"></a>
-<a id="schema_bulk_response"></a>
-<a id="tocSbulk_response"></a>
-<a id="tocsbulk_response"></a>
+`application/octet-stream`
 
-```json
+```ts
 {
-  "id": "00000000-0000-0000-0000-000000000000",
-  "status_url": "/erp3/2531/fornecedores/_bulk/status/00000000-0000-0000-0000-000000000000"
+  "type": "string",
+  "format": "binary",
+  "example": "Retorna um dataset com os dados com erro de importação."
 }
-
 ```
 
-### Properties
+- 401 Proibido acesso. Causa provável: falha na autenticação.
 
-|Name|Type|Required|Restrictions|Description|
-|---|---|---|---|---|
-|id|string|false|none|ID do processo para acompanhamento|
-|status_url|string|false|none|none|
+- 403 Proibida ação. Causa provável: falha na autorização.
 
-<h2 id="tocS_bulk_status">bulk_status</h2>
-<!-- backwards compatibility -->
-<a id="schemabulk_status"></a>
-<a id="schema_bulk_status"></a>
-<a id="tocSbulk_status"></a>
-<a id="tocsbulk_status"></a>
+- 404 Não encontrado. Causa provável: identificador não existente.
 
-```json
+- 500 Erro interno do servidor. Ver detalhes no corpo da resposta.
+
+## References
+
+### #/components/securitySchemes/OAuth2
+
+```ts
 {
-  "id": "00000000-0000-0000-0000-000000000000",
-  "status": "processing",
-  "message": "ocorreram erros durante o processo de importação.",
-  "successes": "550",
-  "failures": "50",
-  "pending": "400",
-  "total": "1000"
+  "type": "oauth2",
+  "flows": {
+    "password": {
+      "tokenUrl": "https://auth.nasajon.com.br/auth/realms/master/protocol/openid-connect/token",
+      "scopes": {
+        "offline_access": "Token para acesso offline"
+      }
+    }
+  }
 }
-
 ```
 
-### Properties
+### #/components/schemas/bulk_url_request
 
-|Name|Type|Required|Restrictions|Description|
-|---|---|---|---|---|
-|id|string|false|none|none|
-|status|string|false|none|none|
-|message|string|false|none|none|
-|successes|integer|false|none|none|
-|failures|integer|false|none|none|
-|pending|integer|false|none|none|
-|total|integer|false|none|none|
-
-<h2 id="tocS_bulk_status_details">bulk_status_details</h2>
-<!-- backwards compatibility -->
-<a id="schemabulk_status_details"></a>
-<a id="schema_bulk_status_details"></a>
-<a id="tocSbulk_status_details"></a>
-<a id="tocsbulk_status_details"></a>
-
-```json
+```ts
+// Corpo da requisição de solicitação de url.
 {
-  "id": "00000000-0000-0000-0000-000000000000",
-  "status": "processing",
-  "message": "ocorreram erros durante o processo de importação.",
-  "successes": "550",
-  "failures": "50",
-  "total": "1000"
+  // Identificador do tenant ao qual o registro pertence.
+  tenant: integer
+  // Identificador do grupo empresarial ao qual o registro pertence.
+  grupo_empresarial_id: string
+  // Nome do arquivo que será carregado.
+  file: string
 }
-
 ```
 
-### Properties
+### #/components/schemas/bulk_url_response
 
-|Name|Type|Required|Restrictions|Description|
-|---|---|---|---|---|
-|id|string|false|none|none|
-|status|string|false|none|none|
-|message|string|false|none|none|
-|successes|integer|false|none|none|
-|failures|integer|false|none|none|
-|total|integer|false|none|none|
+```ts
+// Resposta da requisição de solicitação de url.
+{
+  // ID do processo para acompanhamento.
+  upload_url?: string
+}
+```
 
+### #/components/schemas/bulk_request
+
+```ts
+// Corpo da requisição de envio de arquivo para carregamento.
+{
+  // Identificador do tenant ao qual o registro pertence.
+  tenant: integer
+  // Identificador do grupo empresarial ao qual o registro pertence.
+  grupo_empresarial_id: string
+  // URl com o arquivo usado na importação.
+  url: string
+}
+```
+
+### #/components/schemas/bulk_response
+
+```ts
+// Resposta da requisição de envio de arquivo para carregamento.
+{
+  // ID do processo para acompanhamento.
+  id?: string
+  status_url?: string
+}
+```
+
+### #/components/schemas/bulk_status
+
+```ts
+// Resposta da requisição de constad de status do processo de carga.
+{
+  // ID do processo para acompanhamento.
+  id?: string
+  // Status do processamento.
+  status?: string
+  // Mensagens adicionais relacionadas ao processo.
+  message?: string
+  // Número de registros processados com sucesso.
+  successes?: integer
+  // Número de registros com falha de processamento.
+  failures?: integer
+  // Número de registros ainda não processados.
+  pending?: integer
+  // Número de registros da solicitação.
+  total?: integer
+}
+```

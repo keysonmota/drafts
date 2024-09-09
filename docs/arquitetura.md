@@ -1,23 +1,35 @@
-## Processo de ingestão de dados via Bulk Api
+# "Sincronia por api's"
 
-### Big Picture
+## Big Picture
 
 [Desenho inical C4](https://drive.google.com/file/d/19Yg6AWwLcIwO05uDiTbF7zPSUEcWa3sR/view?ts=66be4d15)
 
+
+### Fluxo Global
+
+1. Componete que exporta os dados, e efetua Upload para o armazenamento;
+
+2. Requisição de importação dos dados e enfileiramento das tarefas;
+
+3. Componente que processa as tarefas enfileiradas;
 
 
 ``` mermaid
 flowchart TD
     CLIENT[1 Processo que gera os arquivos de importação/carga]
+    API_URL[Api de Geração de url assinada]
     API_ENF[2 API de Bulk]
     QUEUE_IMP[Fila de Importação]
     BUCKET[Bucket ou hospedagem]
     BDWEB[(Banco de Dados)]
     API_STATS[4 API de Status]
 
-    CLIENT --> | 1.1 Gera arquivo avro/parquet| BUCKET
+    CLIENT --> |"1.1 (Nome arquivo, tenant)"| API_URL
+    API_URL --> |2| BUCKET
+    API_URL --> |"1.2 (Url upload bucket)"| CLIENT
+    CLIENT --> | 1.3 Gera/ carrega dataset| BUCKET
 
-    CLIENT --> |1.2 Chama api de BULK passando url arquivo| API_ENF
+    CLIENT --> |1.3 Chama api de BULK passando url arquivo| API_ENF
 
     API_ENF --> |2.1 Enfileira Job| QUEUE_IMP
 
@@ -30,16 +42,24 @@ flowchart TD
     API_STATS -->| 4.2 Retorna Retorna status atualizado enfileirado, processando, completo, erro | CLIENT
 
     subgraph API
+        API_URL
         API_ENF
-        QUEUE_IMP
+
         API_STATS
-        BUCKET
-        BDWEB
+
     end
 
     subgraph Externo
         CLIENT
     end
+
+
+    subgraph Serviços
+        QUEUE_IMP
+        BUCKET
+        BDWEB
+    end
+
 ```
 
 ``` mermaid
@@ -69,9 +89,6 @@ flowchart LR
     end
 ```
 
-
-### Exportação de dados
-
 1. Os arquivos de exportação terão formato definido para cada figura [(Exemplos)](#exemplos);
 
 1. Os dados deverão ser transformados para o formato parquet e carregados em algum armazenamento, tal como o **S3** ou similar, utilizando-se de url segura ou token.
@@ -86,19 +103,124 @@ flowchart LR
 
 > Em um processo de importação isso não seria problemático, pois as linguagem geralmente possuem mecanimos de lidar com json, tal como python. Existem soluções que permitem lidar com parquet diretamente no postgres, que já tem suporte a tranformar json em rows para manipulações, mas não foram feitos testes acerca do segundo.
 
+
+### Captura de dados pelas aplicações
+
+A captura de dados nas aplicação deverá ser feita de forma **intencional** e dentro do escopo de uma transação, sem o uso de triggers, através de apis desenhadas para enfileirar no banco, através da biblioteca [QueueLib](https://github.com/Nasajon/nsj-queue-lib).
+
+> De modo geral enfileirar no QueueLib significa efetuar um insert na tabela de eventos, <a href="https://github.com/Nasajon/nsj-queue-lib/blob/e895a2c598bebefc689f2eb0434c462c3453c214/nsj_queue_lib/client/tarefa_dao.py#L212" target="_blank">preenchendo o campo **payload** com  dados do evento.</a>
+
+
+
+
+
+
+
+### Modelo de mensagem das operações
+
+Modelos de operações que serão enfileiradas no Erp e processadas pelo Worker local.
+
+#### Reload
+
+Representa uma ordem de subida de dados em massa.
+
+```json
+{
+"type":"R", // Operação do  tipo recarga
+"schema":"ns",
+"table":"pessoas",
+"filter":"1=1", // Filtro para recarga parcial
+"clear_before":true // Limpar figura antes da recarga
+}
+```
+
+#### Crud
+
+Representa operações unitárias de Insert, Update, Delete sobre um agregado.
+
+```json
+{
+"type":"I",// I-insert; U-upate; D-delete; R-reload
+"id":"000000000000000",// Id do registro
+"schema":"ns",
+"table":"pessoas"
+}
+```
+
+
+### Processo de extração / Envio
+
+```mermaid
+graph TD
+F[Fila - QueueLib]
+W[Worker Local]
+B(Postgres)
+A[Api]
+
+F --> |1 msg| W
+W --> |2 consultas| B
+B --> |3 dados| W
+W --> |4 transformação dados / conversão parquet| W
+W --> |5 parquet| A
+A --> |6 Status| W
+
+
+```
+
+### Transformação de dados
+
+
+```mermaid
+graph TD
+B(Postgres)
+W[Worker Extração]
+R["REST API Lib [DSL Transformação]"]
+P["Pandas Lib [Parquet converter]"]
+A[Api]
+
+B --> |1 dados| W
+W --> |2 transformação dados | R
+R --> |3 dados convertidos| P
+P --> |4 parquet| W
+W --> |5 parquet| A
+A --> |6 Status| W
+
+subgraph Worker
+W
+R
+P
+end
+```
+
+
+### DSL e formato de  conversão
+
+A conversão de dados do banco do erp, será feita através da biblioteca [RestLib](https://github.com/Nasajon/nsj_rest_lib), que é uma biblioteca nossa, que possui estruturas que já conhecem nosso modelo de dados e conseguem converter para um formato json já em uso pelas aplicações [DadosMestre](https://github.com/Nasajon/dados-mestre-api), [Força de Vendas](https://github.com/Nasajon/forca-vendas-api), [Pedidos](https://github.com/Nasajon/pedidosAPI) entre outras.
+
+Nessa biblioteca, cada figura possui um DTO que pode relacionar-se com outros DTO's por agregação ou composição. Esses DTO's funcionam com base em código herdado, para as operações genéricas, e anotações em classes/atributos que indicam como lidar com as colunas das entidades e seus relacionamentos.
+
+> Exemplo <a href="https://github.com/Nasajon/dados-mestre-api/blob/production/nasajon/dto/fornecedor_erp3.py" target="_blank">DTO de Fornecedores</a>.
+
+#### Essa abordagem tem por objetivo:
+
+* Aproveitamento de bibliotecas já existentes;
+* Coesão e compatibilidade das estruturas de dados entre as aplicações;
+* Aproveitamento da experiência dos desenvolvedores com a lib;
+
 ### Apis de importação
 
 As apis de bulk irão receber a url do arquivo, enfileirar e devolver uma URL de status para a conferência do andamento/conclusão do processo.
 
-As apis de Bulk seguem o padrão:
 
->  **PUT** figura/_bulk ->  Para registro do arquivo de importação.
+| Method | Path | Description |
+| --- | --- | --- |
+| POST | [/erp3/2531/fornecedores/_bulk](fornecedores_bulk_api.md#posterp32531fornecedores_bulk) | API para gerar url de upload do dados. |
+| PUT | [/erp3/2531/fornecedores/_bulk](fornecedores_bulk_api.md#puterp32531fornecedores_bulk) | API para carga de dados em Bulk. |
+| GET | [/erp3/2531/fornecedores/_bulk/status/{id}](fornecedores_bulk_api.md#geterp32531fornecedores_bulkstatusid) | API para recuperação de status de Bulk. |
+| GET | [/erp3/2531/fornecedores/_bulk/status/{id}/failures](fornecedores_bulk_api.md#geterp32531fornecedores_bulkstatusidfailures) | API para recuperação de dados falhados durante a importação. Retorna um dataset com as falhas. |
 
->  **GET** figura/_bulk/status/{id} -> Para consulta do andamento do processo.
 
->  **GET** figura/_bulk/status/{id}/failures -> Para consulta do e dados falhados durante a importação.
-
-<a href="fornecedores_bulk_api.md" target="_blank">Documentação apis</a>
+> <a href="fornecedores_bulk_api.md" target="_blank">Documentação das apis</a>
 
 ### Worker
 

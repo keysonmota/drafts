@@ -24,6 +24,9 @@ run_worker: env_setup
 build_doc_openapi_md:
 # https://github.com/Mermade/widdershins
 # https://techdocs.studio/blog/openapi-to-markdown
-	widdershins docs/fornecedores.json -o -c docs/fornecedores_bulk_api.md
+# widdershins docs/fornecedores.json -o -l false -c docs/fornecedores_bulk_api.md
+#	widdershins docs/fornecedores.json -o -c --summary --omitBody --omitHeader --useBodyName  docs/fornecedores_bulk_api.md
+#   widdershins docs/fornecedores.json -o -c --summary  --expandBody docs/fornecedores_bulk_api.md
+	openapi-to-md docs/fornecedores.json > docs/fornecedores_bulk_api.md
 
 build_doc: build_doc_openapi_md

@@ -25,23 +25,79 @@
             }
         },
         "schemas": {
+            "bulk_url_request":{
+                "type": "object",
+                "description": "Corpo da requisição de solicitação de url.",
+                "required": [
+                    "tenant",
+                    "grupo_empresarial_id",
+                    "file"
+                ],
+                "properties": {
+                    "tenant": {
+                        "type": "integer",
+                        "description": "Identificador do tenant ao qual o registro pertence.",
+                        "example" : 47
+                    },
+                    "grupo_empresarial_id": {
+                        "type": "string",
+                        "format": "uuid",
+                        "description": "Identificador do grupo empresarial ao qual o registro pertence.",
+                        "example": "00000000-0000-0000-0000-000000000000"
+                    },
+                    "file" : {
+                        "description": "Nome do arquivo que será carregado.",
+                        "type" : "string",
+                        "example": "fornecedores.parquet"
+                    }
+                }
+            },
+            "bulk_url_response": {
+                "type": "object",
+                "description": "Resposta da requisição de solicitação de url.",
+                "properties": {
+                    "upload_url": {
+                        "type": "string",
+                        "example": "https://armazemento.com/bulk/47/fornecedores/1693903200_fornecedores.parquet",
+                        "description": "ID do processo para acompanhamento."
+                    }
+                }
+            },
             "bulk_request":{
                 "type": "object",
+                "description": "Corpo da requisição de envio de arquivo para carregamento.",
+                "required": [
+                    "tenant",
+                    "grupo_empresarial_id",
+                    "url"
+                ],
                 "properties": {
+                    "tenant": {
+                        "type": "integer",
+                        "description": "Identificador do tenant ao qual o registro pertence.",
+                        "example" : 47
+                    },
+                    "grupo_empresarial_id": {
+                        "type": "string",
+                        "format": "uuid",
+                        "description": "Identificador do grupo empresarial ao qual o registro pertence.",
+                        "example": "00000000-0000-0000-0000-000000000000"
+                    },
                     "url" : {
-                        "description": "URl com o arquivo usado na importação",
+                        "description": "URl com o arquivo usado na importação.",
                         "type" : "string",
-                        "example": "https://armazemento.com/meuarquivo"
+                        "example": "https://armazemento.com/bulk/47/fornecedores/1693903200_fornecedores.parquet"
                     }
                 }
             },
             "bulk_response": {
                 "type": "object",
+                "description": "Resposta da requisição de envio de arquivo para carregamento.",
                 "properties": {
                     "id": {
                         "type": "string",
                         "example": "00000000-0000-0000-0000-000000000000",
-                        "description": "ID do processo para acompanhamento"
+                        "description": "ID do processo para acompanhamento."
                     },
                     "status_url": {
                         "type": "string",
@@ -51,63 +107,42 @@
             },
             "bulk_status":{
                 "type": "object",
+                "description": "Resposta da requisição de constad de status do processo de carga.",
                 "properties": {
                     "id" : {
                         "type" : "string",
-                        "example": "00000000-0000-0000-0000-000000000000"
+                        "example": "00000000-0000-0000-0000-000000000000",
+                        "description": "ID do processo para acompanhamento."
                     },
                     "status" : {
                         "type" : "string",
-                        "example": "processing"
+                        "example": "processing",
+                        "description": "Status do processamento."
                     },
                     "message" : {
                         "type" : "string",
-                        "example": "ocorreram erros durante o processo de importação."
+                        "example": "ocorreram erros durante o processo de importação.",
+                        "description": "Mensagens adicionais relacionadas ao processo."
                     },
                     "successes" : {
                         "type" : "integer",
-                        "example": "550"
+                        "example": "550",
+                        "description": "Número de registros processados com sucesso."
                     },
                     "failures" : {
                         "type" : "integer",
-                        "example": "50"
+                        "example": "50",
+                        "description": "Número de registros com falha de processamento."
                     },
                     "pending" : {
                         "type" : "integer",
-                        "example": "400"
+                        "example": "400",
+                        "description": "Número de registros ainda não processados."
                     },
                     "total" : {
                         "type" : "integer",
-                        "example": "1000"
-                    }
-                }
-            },
-            "bulk_status_details":{
-                "type": "object",
-                "properties": {
-                    "id" : {
-                        "type" : "string",
-                        "example": "00000000-0000-0000-0000-000000000000"
-                    },
-                    "status" : {
-                        "type" : "string",
-                        "example": "processing"
-                    },
-                    "message" : {
-                        "type" : "string",
-                        "example": "ocorreram erros durante o processo de importação."
-                    },
-                    "successes" : {
-                        "type" : "integer",
-                        "example": "550"
-                    },
-                    "failures" : {
-                        "type" : "integer",
-                        "example": "50"
-                    },
-                    "total" : {
-                        "type" : "integer",
-                        "example": "1000"
+                        "example": "1000",
+                        "description": "Número de registros da solicitação."
                     }
                 }
             }
@@ -122,11 +157,65 @@
     ],
     "paths": {
         "/erp3/2531/fornecedores/_bulk": {
+            "post": {
+                "summary": "API para gerar url de upload do dados.",
+                "tags": [
+                    "Fornecedores Bulk"
+                ],
+                "requestBody": {
+                    "description": "Corpo da requisição, contendo a url do arquivo importação.",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/bulk_url_request"
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "description": "Token gerado pelo OAuth 2",
+                        "in": "header",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/bulk_url_response"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Requisição inválida. Causas prováveis: a) faltando propriedades obrigatórias; b) erro de formatação do json de entrada; c) formato incorreto em alguma das propriedades;"
+                    },
+                    "401": {
+                        "description": "Proibido acesso. Causa provável: falha na autenticação."
+                    },
+                    "403": {
+                        "description": "Proibida ação. Causa provável: falha na autorização."
+                    },
+                    "404": {
+                        "description": "Não encontrado. Causa provável: identificador não existente no grupo_empresarial/tenant."
+                    },
+                    "500": {
+                        "description": "Erro interno do servidor. Ver detalhes no corpo da resposta."
+                    }
+                }
+            },
             "put": {
                 "tags": [
-                    "Ingestão de dados em massa."
+                    "Fornecedores Bulk"
                 ],
-                "description": "API para carga de dados em Bulk.",
+                "summary": "API para carga de dados em Bulk.",
                 "requestBody": {
                     "description": "Corpo da requisição, contendo a url do arquivo importação.",
                     "content": {
@@ -180,9 +269,9 @@
         "/erp3/2531/fornecedores/_bulk/status/{id}": {
             "get": {
                 "tags": [
-                    "GET Status Bulk"
+                    "Fornecedores Bulk"
                 ],
-                "description": "API para recuperação de status de Bulk.",
+                "summary": "API para recuperação de status de Bulk.",
                 "parameters": [
                     {
                         "name": "Authorization",
@@ -233,9 +322,9 @@
         "/erp3/2531/fornecedores/_bulk/status/{id}/failures": {
             "get": {
                 "tags": [
-                    "GET failures of status Bulk"
+                    "Fornecedores Bulk"
                 ],
-                "description": "API para recuperação de dados falhados durante a importação. Retorna um dataset com as falhas.",
+                "summary": "API para recuperação de dados falhados durante a importação. Retorna um dataset com as falhas.",
                 "parameters": [
                     {
                         "name": "Authorization",
