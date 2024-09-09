@@ -16,55 +16,57 @@
 
 ``` mermaid
 flowchart TD
-    CLIENT[1 Processo que gera os arquivos de importação/carga]
-    API_URL[Api de Geração de url assinada]
-    API_ENF[2 API de Bulk]
-    QUEUE_IMP[Fila de Importação]
-    BUCKET[Bucket ou hospedagem]
-    BDWEB[(Banco de Dados)]
-    API_STATS[4 API de Status]
+    subgraph ERP
 
-    CLIENT --> |"1.1 (Nome arquivo, tenant)"| API_URL
-    API_URL --> |2| BUCKET
-    API_URL --> |"1.2 (Url upload bucket)"| CLIENT
-    CLIENT --> | 1.3 Gera/ carrega dataset| BUCKET
+        CLIENT[1 Processo que gera os arquivos de importação/carga]
+        API_URL[Api de Geração de url assinada]
+        API_ENF[2 API de Bulk]
+        QUEUE_IMP[Fila de Importação]
+        BUCKET[Bucket ou hospedagem]
+        BDWEB[(Banco de Dados)]
+        API_STATS[4 API de Status]
 
-    CLIENT --> |1.3 Chama api de BULK passando url arquivo| API_ENF
+        CLIENT --> |"1.1 (Nome arquivo, tenant)"| API_URL
+        API_URL --> |2| BUCKET
+        API_URL --> |"1.2 (Url upload bucket)"| CLIENT
+        CLIENT --> | 1.3 Gera/ carrega dataset| BUCKET
 
-    API_ENF --> |2.1 Enfileira Job| QUEUE_IMP
+        CLIENT --> |1.3 Chama api de BULK passando url arquivo| API_ENF
 
-    API_ENF -->|"2.2 retorna (id e url consulta status)"| CLIENT
+        API_ENF --> |2.1 Enfileira Job| QUEUE_IMP
 
-    CLIENT -->| 1.3 Solicita informações andamento processo| API_STATS
+        API_ENF -->|"2.2 retorna (id e url consulta status)"| CLIENT
 
-    API_STATS -->| 4.1 Lê informações job | BDWEB
+        CLIENT -->| 1.3 Solicita informações andamento processo| API_STATS
 
-    API_STATS -->| 4.2 Retorna Retorna status atualizado enfileirado, processando, completo, erro | CLIENT
+        API_STATS -->| 4.1 Lê informações job | BDWEB
 
-    subgraph API
-        API_URL
-        API_ENF
+        API_STATS -->| 4.2 Retorna Retorna status atualizado enfileirado, processando, completo, erro | CLIENT
 
-        API_STATS
+        subgraph API
+            API_URL
+            API_ENF
 
-    end
+            API_STATS
 
-    subgraph Externo
-        CLIENT
-    end
+        end
+
+        subgraph Externo
+            CLIENT
+        end
 
 
-    subgraph Serviços
-        QUEUE_IMP
-        BUCKET
-        BDWEB
+        subgraph Serviços
+            QUEUE_IMP
+            BUCKET
+            BDWEB
+        end
     end
 
 ```
 
 ``` mermaid
 flowchart LR
-
 
     QUEUE_IMP[Fila de Importação]
     WORKER[3 Worker de Execução da Importação]
@@ -151,7 +153,7 @@ Modelos de operações que serão enfileiradas no Erp e processadas pelo Worker 
 ```mermaid
 graph TD
     F["Fila - QueueLib"]
-    W[Worker] 
+    W[Worker]
     B(Postgres)
     A[Api]
     W1{{4 transf. dados / conv. parquet}}
