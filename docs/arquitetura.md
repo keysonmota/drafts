@@ -151,18 +151,17 @@ Modelos de operações que serão enfileiradas no Erp e processadas pelo Worker 
 ```mermaid
 graph TD
     F["Fila - QueueLib"]
-    W[Worker]
+    W[Worker] 
     B(Postgres)
     A[Api]
+    W1{{4 transf. dados / conv. parquet}}
 
     F --> |1 msg| W
     W --> |2 consultas| B
-    B --> |3 dados| W
-    W --> |"4 transformação dados / conversão parquet"| W
-    W --> |5 parquet| A
-    A --> |6 Status| W
-
-
+   B --> |3 dados| W
+   W -.-> W1 -.-> W
+   W --> |5 parquet| A
+   A --> |6 Status| W
 ```
 
 ### Transformação de dados
