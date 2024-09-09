@@ -7,7 +7,7 @@
 
 ### Fluxo Global
 
-1. Componete que exporta os dados, e efetua Upload para o armazenamento;
+1. Componente que exporta os dados, e efetua Upload para o armazenamento;
 
 2. Requisição de importação dos dados e enfileiramento das tarefas;
 
@@ -122,7 +122,7 @@ Modelos de operações que serão enfileiradas no Erp e processadas pelo Worker 
 
 #### Reload
 
-Representa uma ordem de subida de dados em massa.
+>Representa uma ordem de subida de dados em massa.
 
 ```json
 {
@@ -135,8 +135,6 @@ Representa uma ordem de subida de dados em massa.
 ```
 
 #### Crud
-
-Representa operações unitárias de Insert, Update, Delete sobre um agregado.
 
 ```json
 {
@@ -152,17 +150,17 @@ Representa operações unitárias de Insert, Update, Delete sobre um agregado.
 
 ```mermaid
 graph TD
-F[Fila - QueueLib]
-W[Worker Local]
-B(Postgres)
-A[Api]
+    F["Fila - QueueLib"]
+    W[Worker]
+    B(Postgres)
+    A[Api]
 
-F --> |1 msg| W
-W --> |2 consultas| B
-B --> |3 dados| W
-W --> |4 transformação dados / conversão parquet| W
-W --> |5 parquet| A
-A --> |6 Status| W
+    F --> |1 msg| W
+    W --> |2 consultas| B
+    B --> |3 dados| W
+    W --> |"4 transformação dados / conversão parquet"| W
+    W --> |5 parquet| A
+    A --> |6 Status| W
 
 
 ```
@@ -172,24 +170,24 @@ A --> |6 Status| W
 
 ```mermaid
 graph TD
-B(Postgres)
-W[Worker Extração]
-R["REST API Lib [DSL Transformação]"]
-P["Pandas Lib [Parquet converter]"]
-A[Api]
+    B(Postgres)
+    W[Worker Extração]
+    R["REST API Lib [DSL Transformação]"]
+    P["Pandas Lib [Parquet converter]"]
+    A[Api]
 
-B --> |1 dados| W
-W --> |2 transformação dados | R
-R --> |3 dados convertidos| P
-P --> |4 parquet| W
-W --> |5 parquet| A
-A --> |6 Status| W
+    B --> |1 dados| W
+    W --> |2 transformação dados | R
+    R --> |3 dados convertidos| P
+    P --> |4 parquet| W
+    W --> |5 parquet| A
+    A --> |6 Status| W
 
-subgraph Worker
-W
-R
-P
-end
+    subgraph Worker
+    W
+    R
+    P
+    end
 ```
 
 
